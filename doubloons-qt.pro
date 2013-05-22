@@ -44,7 +44,7 @@ contains(USE_QRCODE, 1) {
 # qmake "USE_UPNP=-" (not supported)
 contains(USE_UPNP, -) {
     message(Building without UPNP support)
-
+}
 # use: qmake "USE_DBUS=1"
 contains(USE_DBUS, 1) {
     message(Building with DBUS (Freedesktop notifications) support)
