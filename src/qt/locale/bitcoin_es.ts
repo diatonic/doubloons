@@ -165,32 +165,32 @@ Este producto incluye software desarrollado por el OpenSSL Project para su uso e
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="33"/>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the chest.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Introduzca la nueva contraseña del monedero.&lt;br/&gt;Por favor elija una con &lt;b&gt;10 o más caracteres aleatorios&lt;/b&gt; u &lt;b&gt;ocho o más palabras&lt;/b&gt;.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="34"/>
-        <source>Encrypt wallet</source>
+        <source>Encrypt chest</source>
         <translation>Cifrar el monedero</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="37"/>
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <source>This operation needs your chest passphrase to unlock the chest.</source>
         <translation>Para desbloquear el monedero esta operación necesita de su contraseña.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="42"/>
-        <source>Unlock wallet</source>
+        <source>Unlock chest</source>
         <translation>Desbloquear monedero</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="45"/>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <source>This operation needs your chest passphrase to decrypt the chest.</source>
         <translation>Para descifrar el monedero esta operación necesita de su contraseña.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="50"/>
-        <source>Decrypt wallet</source>
+        <source>Decrypt chest</source>
         <translation>Descifrar monedero</translation>
     </message>
     <message>
@@ -200,30 +200,30 @@ Este producto incluye software desarrollado por el OpenSSL Project para su uso e
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="54"/>
-        <source>Enter the old and new passphrase to the wallet.</source>
+        <source>Enter the old and new passphrase to the chest.</source>
         <translation>Introduzca la contraseña anterior del monedero y la nueva. </translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="100"/>
-        <source>Confirm wallet encryption</source>
+        <source>Confirm chest encryption</source>
         <translation>Confirmar cifrado del monedero</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="101"/>
-        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
-Are you sure you wish to encrypt your wallet?</source>
+        <source>WARNING: If you encrypt your chest and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
+Are you sure you wish to encrypt your chest?</source>
         <translation>ATENCIÓN: ¡Si cifra el monedero y pierde la contraseña perderá &lt;b&gt;TODOS SUS BITCOINS&lt;/b&gt;!&quot;
 ¿Está seguro de querer cifrarlo?</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="110"/>
         <location filename="../askpassphrasedialog.cpp" line="159"/>
-        <source>Wallet encrypted</source>
+        <source>Chest encrypted</source>
         <translation>Monedero cifrado</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="111"/>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your chest cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation>Bitcoin cerrará al finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus bitcoin de ser robados por el malware que infecte su sistema.</translation>
     </message>
     <message>
@@ -237,12 +237,12 @@ Are you sure you wish to encrypt your wallet?</source>
         <location filename="../askpassphrasedialog.cpp" line="123"/>
         <location filename="../askpassphrasedialog.cpp" line="165"/>
         <location filename="../askpassphrasedialog.cpp" line="171"/>
-        <source>Wallet encryption failed</source>
+        <source>Chest encryption failed</source>
         <translation>Ha fallado el cifrado del monedero</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="117"/>
-        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <source>Chest encryption failed due to an internal error. Your chest was not encrypted.</source>
         <translation>Ha fallado el cifrado del monedero debido a un error interno. El monedero no ha sido cifrado.</translation>
     </message>
     <message>
@@ -253,24 +253,24 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="135"/>
-        <source>Wallet unlock failed</source>
+        <source>Chest unlock failed</source>
         <translation>Ha fallado el desbloqueo del monedero</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="136"/>
         <location filename="../askpassphrasedialog.cpp" line="147"/>
         <location filename="../askpassphrasedialog.cpp" line="166"/>
-        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the chest decryption was incorrect.</source>
         <translation>La contraseña introducida para descifrar el monedero es incorrecta.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="146"/>
-        <source>Wallet decryption failed</source>
+        <source>Chest decryption failed</source>
         <translation>Ha fallado el descifrado del monedero</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="160"/>
-        <source>Wallet passphrase was succesfully changed.</source>
+        <source>Chest passphrase was succesfully changed.</source>
         <translation>La contraseña del monedero ha sido cambiada correctamente.</translation>
     </message>
 </context>
@@ -278,7 +278,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="73"/>
-        <source>Bitcoin Wallet</source>
+        <source>Bitcoin Chest</source>
         <translation>Monedero Bitcoin</translation>
     </message>
     <message>
@@ -303,7 +303,7 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="186"/>
-        <source>Show general overview of wallet</source>
+        <source>Show general overview of chest</source>
         <translation>Mostrar vista general del monedero</translation>
     </message>
     <message>
@@ -383,12 +383,12 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="252"/>
-        <source>&amp;Encrypt Wallet...</source>
+        <source>&amp;Encrypt Chest...</source>
         <translation>&amp;Cifrar monedero…</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="255"/>
-        <source>&amp;Backup Wallet...</source>
+        <source>&amp;Backup Chest...</source>
         <translation>Copia de &amp;respaldo del monedero...</translation>
     </message>
     <message>
@@ -433,17 +433,17 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="253"/>
-        <source>Encrypt or decrypt wallet</source>
+        <source>Encrypt or decrypt chest</source>
         <translation>Cifrar o descifrar el monedero</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="256"/>
-        <source>Backup wallet to another location</source>
+        <source>Backup chest to another location</source>
         <translation>Copia de seguridad del monedero en otra ubicación</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="258"/>
-        <source>Change the passphrase used for wallet encryption</source>
+        <source>Change the passphrase used for chest encryption</source>
         <translation>Cambiar la contraseña utilizada para el cifrado del monedero</translation>
     </message>
     <message>
@@ -582,22 +582,22 @@ Dirección: %4</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="804"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>El monedero está &lt;b&gt;cifrado&lt;/b&gt; y actualmente &lt;b&gt;desbloqueado&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="812"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>El monedero está &lt;b&gt;cifrado&lt;/b&gt; y actualmente &lt;b&gt;bloqueado&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="835"/>
-        <source>Backup Wallet</source>
+        <source>Backup Chest</source>
         <translation>Copia de seguridad del monedero</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="835"/>
-        <source>Wallet Data (*.dat)</source>
+        <source>Chest Data (*.dat)</source>
         <translation>Datos del monedero (*.dat)</translation>
     </message>
     <message>
@@ -607,7 +607,7 @@ Dirección: %4</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="838"/>
-        <source>There was an error trying to save the wallet data to the new location.</source>
+        <source>There was an error trying to save the chest data to the new location.</source>
         <translation>Ha habido un error al intentar guardar los datos del monedero a la nueva ubicación.</translation>
     </message>
     <message>
@@ -736,7 +736,7 @@ Dirección: %4</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="101"/>
-        <source>Could not unlock wallet.</source>
+        <source>Could not unlock chest.</source>
         <translation>No se pudo desbloquear el monedero.</translation>
     </message>
     <message>
@@ -793,7 +793,7 @@ Dirección: %4</translation>
     <name>MainOptionsPage</name>
     <message>
         <location filename="../optionsdialog.cpp" line="227"/>
-        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
+        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The chest is always detached.</source>
         <translation>Desconectar las bases de datos de bloques y direcciones al cerrar la aplicación. Implica que pueden moverse a otros directorios de datos pero ralentiza el cierre. El monedero siempre queda desconectado.</translation>
     </message>
     <message>
@@ -1004,7 +1004,7 @@ Dirección: %4</translation>
     <message>
         <location filename="../forms/overviewpage.ui" line="47"/>
         <location filename="../forms/overviewpage.ui" line="204"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your chest automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1024,7 +1024,7 @@ Dirección: %4</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="40"/>
-        <source>Wallet</source>
+        <source>Chest</source>
         <translation>Monedero</translation>
     </message>
     <message>
@@ -1044,7 +1044,7 @@ Dirección: %4</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="154"/>
-        <source>Total number of transactions in wallet</source>
+        <source>Total number of transactions in chest</source>
         <translation>Número total de movimientos en el monedero</translation>
     </message>
     <message>
@@ -1349,7 +1349,7 @@ Dirección: %4</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2187,7 +2187,7 @@ Dirección: %4</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="101"/>
-        <source>Upgrade wallet to latest format</source>
+        <source>Upgrade chest to latest format</source>
         <translation>Actualizar el monedero al último formato</translation>
     </message>
     <message>
@@ -2198,7 +2198,7 @@ Dirección: %4</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="103"/>
-        <source>Rescan the block chain for missing wallet transactions</source>
+        <source>Rescan the block chain for missing chest transactions</source>
         <translation>Volver a examinar la cadena de bloques en busca de transacciones del monedero perdidas</translation>
     </message>
     <message>
@@ -2311,23 +2311,23 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Error al cargar wallet.dat: el monedero está dañado</translation>
+        <source>Error loading chest.dat: Chest corrupted</source>
+        <translation>Error al cargar chest.dat: el monedero está dañado</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>Error al cargar wallet.dat: El monedero requiere una versión más reciente de Bitcoin</translation>
+        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
+        <translation>Error al cargar chest.dat: El monedero requiere una versión más reciente de Bitcoin</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
+        <source>Chest needed to be rewritten: restart Bitcoin to complete</source>
         <translation>El monedero ha necesitado ser reescrito. Reinicie Bitcoin para completar el proceso</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading wallet.dat</source>
-        <translation>Error al cargar wallet.dat</translation>
+        <source>Error loading chest.dat</source>
+        <translation>Error al cargar chest.dat</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2376,7 +2376,7 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="31"/>
-        <source>Error: Wallet locked, unable to create transaction  </source>
+        <source>Error: Chest locked, unable to create transaction  </source>
         <translation>Error: monedero bloqueado. Bitcoin es incapaz de crear las transacciones  </translation>
     </message>
     <message>
@@ -2396,8 +2396,8 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Error: la transacción fue rechazada. Esto puede pasar si alguna de las monedas ya estaba gastada o si ha usado una copia de wallet.dat y las monedas se gastaron en la copia pero no se han marcado como gastadas aquí.</translation>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Error: la transacción fue rechazada. Esto puede pasar si alguna de las monedas ya estaba gastada o si ha usado una copia de chest.dat y las monedas se gastaron en la copia pero no se han marcado como gastadas aquí.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="41"/>
@@ -2461,12 +2461,12 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="133"/>
-        <source>Loading wallet...</source>
+        <source>Loading chest...</source>
         <translation>Cargando monedero...</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="138"/>
-        <source>Cannot downgrade wallet</source>
+        <source>Cannot downgrade chest</source>
         <translation>No se puede rebajar el monedero</translation>
     </message>
     <message>

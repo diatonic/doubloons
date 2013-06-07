@@ -96,7 +96,7 @@ public:
     /** Decompose CWallet transaction to model transaction records.
      */
     static bool showTransaction(const CWalletTx &wtx);
-    static QList<TransactionRecord> decomposeTransaction(const CWallet *wallet, const CWalletTx &wtx);
+    static QList<TransactionRecord> decomposeTransaction(const CWallet *chest, const CWalletTx &wtx);
 
     /** @name Immutable transaction attributes
       @{*/
@@ -117,7 +117,7 @@ public:
     /** Return the unique identifier for this transaction (part) */
     std::string getTxID();
 
-    /** Update status from core wallet tx.
+    /** Update status from core chest tx.
      */
     void updateStatus(const CWalletTx &wtx);
 

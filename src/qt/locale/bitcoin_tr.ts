@@ -165,32 +165,32 @@ Bu ürün OpenSSL projesi tarafından OpenSSL araç takımı (http://www.openssl
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="33"/>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the chest.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Cüzdanınız için yeni parolayı giriniz.&lt;br/&gt;Lütfen &lt;b&gt;10 ya da daha fazla rastgele karakter&lt;/b&gt; veya &lt;b&gt;sekiz ya da daha fazla kelime&lt;/b&gt; içeren bir parola seçiniz.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="34"/>
-        <source>Encrypt wallet</source>
+        <source>Encrypt chest</source>
         <translation>Cüzdanı şifrele</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="37"/>
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <source>This operation needs your chest passphrase to unlock the chest.</source>
         <translation>Bu işlem cüzdan kilidini açmak için cüzdan parolanızı gerektirir.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="42"/>
-        <source>Unlock wallet</source>
+        <source>Unlock chest</source>
         <translation>Cüzdan kilidini aç</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="45"/>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <source>This operation needs your chest passphrase to decrypt the chest.</source>
         <translation>Bu işlem, cüzdan şifresini açmak için cüzdan parolasını gerektirir.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="50"/>
-        <source>Decrypt wallet</source>
+        <source>Decrypt chest</source>
         <translation>Cüzdan şifresini aç</translation>
     </message>
     <message>
@@ -200,30 +200,30 @@ Bu ürün OpenSSL projesi tarafından OpenSSL araç takımı (http://www.openssl
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="54"/>
-        <source>Enter the old and new passphrase to the wallet.</source>
+        <source>Enter the old and new passphrase to the chest.</source>
         <translation>Cüzdan için eski ve yeni parolaları giriniz.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="100"/>
-        <source>Confirm wallet encryption</source>
+        <source>Confirm chest encryption</source>
         <translation>Cüzdan şifrelenmesini teyit eder</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="101"/>
-        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
-Are you sure you wish to encrypt your wallet?</source>
+        <source>WARNING: If you encrypt your chest and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
+Are you sure you wish to encrypt your chest?</source>
         <translation>UYARI: Eğer cüzdanınızı şifrelerseniz ve parolanızı kaybederseniz, &lt;b&gt;TÜM BİTCOİNLERİNİZİ KAYBEDERSİNİZ&lt;/b&gt;!
 Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="110"/>
         <location filename="../askpassphrasedialog.cpp" line="159"/>
-        <source>Wallet encrypted</source>
+        <source>Chest encrypted</source>
         <translation>Cüzdan şifrelendi</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="111"/>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your chest cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation>Şifreleme işlemini tamamlamak için Bitcoin şimdi kapanacaktır. Cüzdanınızı şifrelemenin, Bitcoinlerinizin bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
     </message>
     <message>
@@ -237,12 +237,12 @@ Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
         <location filename="../askpassphrasedialog.cpp" line="123"/>
         <location filename="../askpassphrasedialog.cpp" line="165"/>
         <location filename="../askpassphrasedialog.cpp" line="171"/>
-        <source>Wallet encryption failed</source>
+        <source>Chest encryption failed</source>
         <translation>Cüzdan şifrelemesi başarısız oldu</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="117"/>
-        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <source>Chest encryption failed due to an internal error. Your chest was not encrypted.</source>
         <translation>Dahili bir hata sebebiyle cüzdan şifrelemesi başarısız oldu. Cüzdanınız şifrelenmedi.</translation>
     </message>
     <message>
@@ -253,24 +253,24 @@ Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="135"/>
-        <source>Wallet unlock failed</source>
+        <source>Chest unlock failed</source>
         <translation>Cüzdan kilidinin açılması başarısız oldu</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="136"/>
         <location filename="../askpassphrasedialog.cpp" line="147"/>
         <location filename="../askpassphrasedialog.cpp" line="166"/>
-        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the chest decryption was incorrect.</source>
         <translation>Cüzdan şifresinin açılması için girilen parola yanlıştı.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="146"/>
-        <source>Wallet decryption failed</source>
+        <source>Chest decryption failed</source>
         <translation>Cüzdan şifresinin açılması başarısız oldu</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="160"/>
-        <source>Wallet passphrase was succesfully changed.</source>
+        <source>Chest passphrase was succesfully changed.</source>
         <translation>Cüzdan parolası başarılı bir şekilde değiştirildi.</translation>
     </message>
 </context>
@@ -278,7 +278,7 @@ Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="73"/>
-        <source>Bitcoin Wallet</source>
+        <source>Bitcoin Chest</source>
         <translation>Bitcoin cüzdanı</translation>
     </message>
     <message>
@@ -303,7 +303,7 @@ Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="186"/>
-        <source>Show general overview of wallet</source>
+        <source>Show general overview of chest</source>
         <translation>Cüzdana genel bakışı gösterir</translation>
     </message>
     <message>
@@ -383,12 +383,12 @@ Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="252"/>
-        <source>&amp;Encrypt Wallet...</source>
+        <source>&amp;Encrypt Chest...</source>
         <translation>Cüzdanı &amp;şifrele...</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="255"/>
-        <source>&amp;Backup Wallet...</source>
+        <source>&amp;Backup Chest...</source>
         <translation>Cüzdanı &amp;yedekle...</translation>
     </message>
     <message>
@@ -433,17 +433,17 @@ Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="253"/>
-        <source>Encrypt or decrypt wallet</source>
+        <source>Encrypt or decrypt chest</source>
         <translation>Cüzdanı şifreler ya da şifreyi açar</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="256"/>
-        <source>Backup wallet to another location</source>
+        <source>Backup chest to another location</source>
         <translation>Cüzdanı diğer bir konumda yedekle</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="258"/>
-        <source>Change the passphrase used for wallet encryption</source>
+        <source>Change the passphrase used for chest encryption</source>
         <translation>Cüzdan şifrelemesi için kullanılan parolayı değiştirir</translation>
     </message>
     <message>
@@ -583,22 +583,22 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="804"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Cüzdan &lt;b&gt;şifrelenmiştir&lt;/b&gt; ve şu anda &lt;b&gt;kilidi açılmıştır&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="812"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Cüzdan &lt;b&gt;şifrelenmiştir&lt;/b&gt; ve şu anda &lt;b&gt;kilitlidir&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="835"/>
-        <source>Backup Wallet</source>
+        <source>Backup Chest</source>
         <translation>Cüzdanı yedekle</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="835"/>
-        <source>Wallet Data (*.dat)</source>
+        <source>Chest Data (*.dat)</source>
         <translation>Cüzdan verileri (*.dat)</translation>
     </message>
     <message>
@@ -608,7 +608,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="838"/>
-        <source>There was an error trying to save the wallet data to the new location.</source>
+        <source>There was an error trying to save the chest data to the new location.</source>
         <translation>Cüzdan verilerinin başka bir konumda kaydedilmesi sırasında bir hata meydana geldi.</translation>
     </message>
     <message>
@@ -737,7 +737,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="101"/>
-        <source>Could not unlock wallet.</source>
+        <source>Could not unlock chest.</source>
         <translation>Cüzdan kilidi açılamadı.</translation>
     </message>
     <message>
@@ -794,7 +794,7 @@ Adres: %4
     <name>MainOptionsPage</name>
     <message>
         <location filename="../optionsdialog.cpp" line="227"/>
-        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
+        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The chest is always detached.</source>
         <translation>Çıkışta blok ve adres veri tabanlarını ayırır. Bu, kapanışı yavaşlatır ancak veri tabanlarının başka klasörlere taşınabilmelerine imkân sağlar. Cüzdan daima ayırılır.</translation>
     </message>
     <message>
@@ -1005,7 +1005,7 @@ Adres: %4
     <message>
         <location filename="../forms/overviewpage.ui" line="47"/>
         <location filename="../forms/overviewpage.ui" line="204"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your chest automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Görüntülenen veriler zaman aşımını uğramış olabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak şebeke ile eşleşir ancak bu işlem henüz tamamlanmamıştır.</translation>
     </message>
     <message>
@@ -1025,7 +1025,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="40"/>
-        <source>Wallet</source>
+        <source>Chest</source>
         <translation>Cüzdan</translation>
     </message>
     <message>
@@ -1045,7 +1045,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="154"/>
-        <source>Total number of transactions in wallet</source>
+        <source>Total number of transactions in chest</source>
         <translation>Cüzdandaki muamelelerin toplam sayısı</translation>
     </message>
     <message>
@@ -1350,8 +1350,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Hata: Muamele reddedildi.  Cüzdanınızdaki madenî paraların bazıları zaten harcanmış olduğunda bu meydana gelebilir. Örneğin wallet.dat dosyasının bir kopyasını kullandıysanız ve kopyada para harcandığında ancak burada harcandığı işaretlenmediğinde.</translation>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Hata: Muamele reddedildi.  Cüzdanınızdaki madenî paraların bazıları zaten harcanmış olduğunda bu meydana gelebilir. Örneğin chest.dat dosyasının bir kopyasını kullandıysanız ve kopyada para harcandığında ancak burada harcandığı işaretlenmediğinde.</translation>
     </message>
 </context>
 <context>
@@ -2173,7 +2173,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="101"/>
-        <source>Upgrade wallet to latest format</source>
+        <source>Upgrade chest to latest format</source>
         <translation>Cüzdanı en yeni biçime güncelle</translation>
     </message>
     <message>
@@ -2183,7 +2183,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="103"/>
-        <source>Rescan the block chain for missing wallet transactions</source>
+        <source>Rescan the block chain for missing chest transactions</source>
         <translation>Blok zincirini eksik cüzdan muameleleri için tekrar tara</translation>
     </message>
     <message>
@@ -2290,23 +2290,23 @@ SSL seçenekleri: (SSL kurulum bilgisi için Bitcoin vikisine bakınız)</transl
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: bozuk cüzdan</translation>
+        <source>Error loading chest.dat: Chest corrupted</source>
+        <translation>chest.dat dosyasının yüklenmesinde hata oluştu: bozuk cüzdan</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: cüzdanın daha yeni bir Bitcoin sürümüne ihtiyacı var</translation>
+        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
+        <translation>chest.dat dosyasının yüklenmesinde hata oluştu: cüzdanın daha yeni bir Bitcoin sürümüne ihtiyacı var</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
+        <source>Chest needed to be rewritten: restart Bitcoin to complete</source>
         <translation>Cüzdanın tekrar yazılması gerekiyordu: işlemi tamamlamak için Bitcoin&apos;i yeniden başlatınız</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading wallet.dat</source>
-        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu</translation>
+        <source>Error loading chest.dat</source>
+        <translation>chest.dat dosyasının yüklenmesinde hata oluştu</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2355,7 +2355,7 @@ SSL seçenekleri: (SSL kurulum bilgisi için Bitcoin vikisine bakınız)</transl
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="31"/>
-        <source>Error: Wallet locked, unable to create transaction  </source>
+        <source>Error: Chest locked, unable to create transaction  </source>
         <translation>Hata: Cüzdan kilitli, muamele oluşturulamadı  </translation>
     </message>
     <message>
@@ -2375,8 +2375,8 @@ SSL seçenekleri: (SSL kurulum bilgisi için Bitcoin vikisine bakınız)</transl
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Hata: Muamele reddedildi.  Cüzdanınızdaki madenî paraların bazıları zaten harcanmış olduğunda bu meydana gelebilir. Örneğin wallet.dat dosyasının bir kopyasını kullandıysanız ve kopyada para harcandığında ancak burada harcandığı işaretlenmediğinde.</translation>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Hata: Muamele reddedildi.  Cüzdanınızdaki madenî paraların bazıları zaten harcanmış olduğunda bu meydana gelebilir. Örneğin chest.dat dosyasının bir kopyasını kullandıysanız ve kopyada para harcandığında ancak burada harcandığı işaretlenmediğinde.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="41"/>
@@ -2440,12 +2440,12 @@ SSL seçenekleri: (SSL kurulum bilgisi için Bitcoin vikisine bakınız)</transl
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="133"/>
-        <source>Loading wallet...</source>
+        <source>Loading chest...</source>
         <translation>Cüzdan yükleniyor...</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="138"/>
-        <source>Cannot downgrade wallet</source>
+        <source>Cannot downgrade chest</source>
         <translation>Cüzdan eski biçime geri alınamaz</translation>
     </message>
     <message>

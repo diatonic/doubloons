@@ -69,8 +69,8 @@ bool OptionsModel::Upgrade()
 
     settings.setValue("bImportFinished", true);
 
-    // Move settings from old wallet.dat (if any):
-    CWalletDB walletdb("wallet.dat");
+    // Move settings from old chest.dat (if any):
+    CWalletDB walletdb("chest.dat");
 
     QList<QString> intOptions;
     intOptions << "nDisplayUnit" << "nTransactionFee";

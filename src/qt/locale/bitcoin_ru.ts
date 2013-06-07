@@ -165,32 +165,32 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="33"/>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the chest.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Введите новый пароль для бумажника. &lt;br/&gt; Пожалуйста, используйте фразы из &lt;b&gt;10 или более случайных символов,&lt;/b&gt; или &lt;b&gt;восьми и более слов.&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="34"/>
-        <source>Encrypt wallet</source>
+        <source>Encrypt chest</source>
         <translation>Зашифровать бумажник</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="37"/>
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <source>This operation needs your chest passphrase to unlock the chest.</source>
         <translation>Для выполнения операции требуется пароль вашего бумажника.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="42"/>
-        <source>Unlock wallet</source>
+        <source>Unlock chest</source>
         <translation>Разблокировать бумажник</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="45"/>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <source>This operation needs your chest passphrase to decrypt the chest.</source>
         <translation>Для выполнения операции требуется пароль вашего бумажника.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="50"/>
-        <source>Decrypt wallet</source>
+        <source>Decrypt chest</source>
         <translation>Расшифровать бумажник</translation>
     </message>
     <message>
@@ -200,30 +200,30 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="54"/>
-        <source>Enter the old and new passphrase to the wallet.</source>
+        <source>Enter the old and new passphrase to the chest.</source>
         <translation>Введите старый и новый пароль для бумажника.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="100"/>
-        <source>Confirm wallet encryption</source>
+        <source>Confirm chest encryption</source>
         <translation>Подтвердите шифрование бумажника</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="101"/>
-        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
-Are you sure you wish to encrypt your wallet?</source>
+        <source>WARNING: If you encrypt your chest and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
+Are you sure you wish to encrypt your chest?</source>
         <translation>ВНИМАНИЕ: Если вы зашифруете бумажник и потеряете свой ​​пароль, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ БИТКОИНЫ!&lt;/b&gt;
 Вы действительно хотите зашифровать ваш бумажник?</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="110"/>
         <location filename="../askpassphrasedialog.cpp" line="159"/>
-        <source>Wallet encrypted</source>
+        <source>Chest encrypted</source>
         <translation>Бумажник зашифрован</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="111"/>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your chest cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши биткоины от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -237,12 +237,12 @@ Are you sure you wish to encrypt your wallet?</source>
         <location filename="../askpassphrasedialog.cpp" line="123"/>
         <location filename="../askpassphrasedialog.cpp" line="165"/>
         <location filename="../askpassphrasedialog.cpp" line="171"/>
-        <source>Wallet encryption failed</source>
+        <source>Chest encryption failed</source>
         <translation>Не удалось зашифровать бумажник</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="117"/>
-        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <source>Chest encryption failed due to an internal error. Your chest was not encrypted.</source>
         <translation>Шифрование бумажника не удалось из-за внутренней ошибки. Ваш бумажник не был зашифрован.</translation>
     </message>
     <message>
@@ -253,24 +253,24 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="135"/>
-        <source>Wallet unlock failed</source>
+        <source>Chest unlock failed</source>
         <translation>Разблокировка бумажника не удалась</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="136"/>
         <location filename="../askpassphrasedialog.cpp" line="147"/>
         <location filename="../askpassphrasedialog.cpp" line="166"/>
-        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the chest decryption was incorrect.</source>
         <translation>Указанный пароль не подходит.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="146"/>
-        <source>Wallet decryption failed</source>
+        <source>Chest decryption failed</source>
         <translation>Расшифрование бумажника не удалось</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="160"/>
-        <source>Wallet passphrase was succesfully changed.</source>
+        <source>Chest passphrase was succesfully changed.</source>
         <translation>Пароль бумажника успешно изменён.</translation>
     </message>
 </context>
@@ -278,7 +278,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="73"/>
-        <source>Bitcoin Wallet</source>
+        <source>Bitcoin Chest</source>
         <translation>Bitcoin-бумажник</translation>
     </message>
     <message>
@@ -303,7 +303,7 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="186"/>
-        <source>Show general overview of wallet</source>
+        <source>Show general overview of chest</source>
         <translation>Показать общий обзор действий с бумажником</translation>
     </message>
     <message>
@@ -383,12 +383,12 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="252"/>
-        <source>&amp;Encrypt Wallet...</source>
+        <source>&amp;Encrypt Chest...</source>
         <translation>&amp;Зашифровать бумажник</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="255"/>
-        <source>&amp;Backup Wallet...</source>
+        <source>&amp;Backup Chest...</source>
         <translation>&amp;Сделать резервную копию бумажника</translation>
     </message>
     <message>
@@ -433,17 +433,17 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="253"/>
-        <source>Encrypt or decrypt wallet</source>
+        <source>Encrypt or decrypt chest</source>
         <translation>Зашифровать или расшифровать бумажник</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="256"/>
-        <source>Backup wallet to another location</source>
+        <source>Backup chest to another location</source>
         <translation>Сделать резервную копию бумажника в другом месте</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="258"/>
-        <source>Change the passphrase used for wallet encryption</source>
+        <source>Change the passphrase used for chest encryption</source>
         <translation>Изменить пароль шифрования бумажника</translation>
     </message>
     <message>
@@ -583,22 +583,22 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="804"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Бумажник &lt;b&gt;зашифрован&lt;/b&gt; и в настоящее время &lt;b&gt;разблокирован&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="812"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Бумажник &lt;b&gt;зашифрован&lt;/b&gt; и в настоящее время &lt;b&gt;заблокирован&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="835"/>
-        <source>Backup Wallet</source>
+        <source>Backup Chest</source>
         <translation>Сделать резервную копию бумажника</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="835"/>
-        <source>Wallet Data (*.dat)</source>
+        <source>Chest Data (*.dat)</source>
         <translation>Данные бумажника (*.dat)</translation>
     </message>
     <message>
@@ -608,7 +608,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="838"/>
-        <source>There was an error trying to save the wallet data to the new location.</source>
+        <source>There was an error trying to save the chest data to the new location.</source>
         <translation>При попытке сохранения данных бумажника в новое место произошла ошибка.</translation>
     </message>
     <message>
@@ -737,7 +737,7 @@ Address: %4
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="101"/>
-        <source>Could not unlock wallet.</source>
+        <source>Could not unlock chest.</source>
         <translation>Не удается разблокировать бумажник.</translation>
     </message>
     <message>
@@ -794,7 +794,7 @@ Address: %4
     <name>MainOptionsPage</name>
     <message>
         <location filename="../optionsdialog.cpp" line="227"/>
-        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
+        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The chest is always detached.</source>
         <translation>Отключить базы данных блоков и адресов при выходе. Это означает, что их можно будет переместить в другой каталог данных, но завершение работы будет медленнее. Бумажник всегда отключается.</translation>
     </message>
     <message>
@@ -1005,7 +1005,7 @@ Address: %4
     <message>
         <location filename="../forms/overviewpage.ui" line="47"/>
         <location filename="../forms/overviewpage.ui" line="204"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your chest automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью Bitcoin после подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
@@ -1025,7 +1025,7 @@ Address: %4
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="40"/>
-        <source>Wallet</source>
+        <source>Chest</source>
         <translation>Бумажник</translation>
     </message>
     <message>
@@ -1045,7 +1045,7 @@ Address: %4
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="154"/>
-        <source>Total number of transactions in wallet</source>
+        <source>Total number of transactions in chest</source>
         <translation>Общее количество транзакций в Вашем бумажнике</translation>
     </message>
     <message>
@@ -1350,8 +1350,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Ошибка: В транзакции отказано.  Такое может произойти, если некоторые монеты уже были потрачены, например, если Вы используете одну копию файла wallet.dat, а монеты были потрачены из другой копии, но не были отмечены как потраченные в этой.</translation>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Ошибка: В транзакции отказано.  Такое может произойти, если некоторые монеты уже были потрачены, например, если Вы используете одну копию файла chest.dat, а монеты были потрачены из другой копии, но не были отмечены как потраченные в этой.</translation>
     </message>
 </context>
 <context>
@@ -2174,7 +2174,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="101"/>
-        <source>Upgrade wallet to latest format</source>
+        <source>Upgrade chest to latest format</source>
         <translation>Обновить бумажник до последнего формата</translation>
     </message>
     <message>
@@ -2184,7 +2184,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="103"/>
-        <source>Rescan the block chain for missing wallet transactions</source>
+        <source>Rescan the block chain for missing chest transactions</source>
         <translation>Перепроверить цепь блоков на предмет отсутствующих в бумажнике транзакций</translation>
     </message>
     <message>
@@ -2291,23 +2291,23 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Ошибка загрузки wallet.dat: Бумажник поврежден</translation>
+        <source>Error loading chest.dat: Chest corrupted</source>
+        <translation>Ошибка загрузки chest.dat: Бумажник поврежден</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию Bitcoin</translation>
+        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
+        <translation>Ошибка загрузки chest.dat: бумажник требует более новую версию Bitcoin</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
+        <source>Chest needed to be rewritten: restart Bitcoin to complete</source>
         <translation>Необходимо перезаписать бумажник, перезапустите Bitcoin для завершения операции.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading wallet.dat</source>
-        <translation>Ошибка при загрузке wallet.dat</translation>
+        <source>Error loading chest.dat</source>
+        <translation>Ошибка при загрузке chest.dat</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2356,7 +2356,7 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="31"/>
-        <source>Error: Wallet locked, unable to create transaction  </source>
+        <source>Error: Chest locked, unable to create transaction  </source>
         <translation>Ошибка: бумажник заблокирован, невозможно создать транзакцию  </translation>
     </message>
     <message>
@@ -2376,8 +2376,8 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Ошибка: В транзакции отказано.  Такое может произойти, если некоторые монеты уже были потрачены, например, если Вы используете одну копию файла wallet.dat, а монеты были потрачены из другой копии, но не были отмечены как потраченные в этой.</translation>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Ошибка: В транзакции отказано.  Такое может произойти, если некоторые монеты уже были потрачены, например, если Вы используете одну копию файла chest.dat, а монеты были потрачены из другой копии, но не были отмечены как потраченные в этой.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="41"/>
@@ -2441,12 +2441,12 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="133"/>
-        <source>Loading wallet...</source>
+        <source>Loading chest...</source>
         <translation>Загрузка бумажника...</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="138"/>
-        <source>Cannot downgrade wallet</source>
+        <source>Cannot downgrade chest</source>
         <translation>Не удаётся понизить версию бумажника</translation>
     </message>
     <message>

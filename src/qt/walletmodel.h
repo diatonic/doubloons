@@ -22,12 +22,12 @@ public:
     qint64 amount;
 };
 
-/** Interface to Bitcoin wallet from Qt view code. */
+/** Interface to Bitcoin chest from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT
 public:
-    explicit WalletModel(CWallet *wallet, OptionsModel *optionsModel, QObject *parent = 0);
+    explicit WalletModel(CWallet *chest, OptionsModel *optionsModel, QObject *parent = 0);
     ~WalletModel();
 
     enum StatusCode // Returned by sendCoins
@@ -38,16 +38,16 @@ public:
         AmountExceedsBalance,
         AmountWithFeeExceedsBalance,
         DuplicateAddress,
-        TransactionCreationFailed, // Error returned when wallet is still locked
+        TransactionCreationFailed, // Error returned when chest is still locked
         TransactionCommitFailed,
         Aborted
     };
 
     enum EncryptionStatus
     {
-        Unencrypted,  // !wallet->IsCrypted()
-        Locked,       // wallet->IsCrypted() && wallet->IsLocked()
-        Unlocked      // wallet->IsCrypted() && !wallet->IsLocked()
+        Unencrypted,  // !chest->IsCrypted()
+        Locked,       // chest->IsCrypted() && chest->IsLocked()
+        Unlocked      // chest->IsCrypted() && !chest->IsLocked()
     };
 
     OptionsModel *getOptionsModel();
@@ -78,19 +78,19 @@ public:
     // Send coins to a list of recipients
     SendCoinsReturn sendCoins(const QList<SendCoinsRecipient> &recipients);
 
-    // Wallet encryption
+    // Chest encryption
     bool setWalletEncrypted(bool encrypted, const SecureString &passphrase);
     // Passphrase only needed when unlocking
     bool setWalletLocked(bool locked, const SecureString &passPhrase=SecureString());
     bool changePassphrase(const SecureString &oldPass, const SecureString &newPass);
-    // Wallet backup
+    // Chest backup
     bool backupWallet(const QString &filename);
 
-    // RAI object for unlocking wallet, returned by requestUnlock()
+    // RAI object for unlocking chest, returned by requestUnlock()
     class UnlockContext
     {
     public:
-        UnlockContext(WalletModel *wallet, bool valid, bool relock);
+        UnlockContext(WalletModel *chest, bool valid, bool relock);
         ~UnlockContext();
 
         bool isValid() const { return valid; }
@@ -99,7 +99,7 @@ public:
         UnlockContext(const UnlockContext& obj) { CopyFrom(obj); }
         UnlockContext& operator=(const UnlockContext& rhs) { CopyFrom(rhs); return *this; }
     private:
-        WalletModel *wallet;
+        WalletModel *chest;
         bool valid;
         mutable bool relock; // mutable, as it can be set to false by copying
 
@@ -109,9 +109,9 @@ public:
     UnlockContext requestUnlock();
 
 private:
-    CWallet *wallet;
+    CWallet *chest;
 
-    // Wallet has an options model for wallet-specific options
+    // Chest has an options model for chest-specific options
     // (transaction fee, for example)
     OptionsModel *optionsModel;
 
@@ -133,17 +133,17 @@ private:
     void checkBalanceChanged();
 
 signals:
-    // Signal that balance in wallet changed
+    // Signal that balance in chest changed
     void balanceChanged(qint64 balance, qint64 unconfirmedBalance, qint64 immatureBalance);
 
-    // Number of transactions in wallet changed
+    // Number of transactions in chest changed
     void numTransactionsChanged(int count);
 
-    // Encryption status of wallet changed
+    // Encryption status of chest changed
     void encryptionStatusChanged(int status);
 
-    // Signal emitted when wallet needs to be unlocked
-    // It is valid behaviour for listeners to keep the wallet locked after this signal;
+    // Signal emitted when chest needs to be unlocked
+    // It is valid behaviour for listeners to keep the chest locked after this signal;
     // this means that the unlocking failed or was cancelled.
     void requireUnlock();
 
@@ -151,7 +151,7 @@ signals:
     void error(const QString &title, const QString &message, bool modal);
 
 public slots:
-    /* Wallet status might have changed */
+    /* Chest status might have changed */
     void updateStatus();
     /* New transaction, or transaction changed status */
     void updateTransaction(const QString &hash, int status);

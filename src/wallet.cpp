@@ -4,7 +4,7 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "wallet.h"
+#include "chest.h"
 #include "walletdb.h"
 #include "crypter.h"
 #include "ui_interface.h"
@@ -132,7 +132,7 @@ bool CWallet::ChangeWalletPassphrase(const SecureString& strOldWalletPassphrase,
                 if (pMasterKey.second.nDeriveIterations < 25000)
                     pMasterKey.second.nDeriveIterations = 25000;
 
-                printf("Wallet passphrase changed to an nDeriveIterations of %i\n", pMasterKey.second.nDeriveIterations);
+                printf("Chest passphrase changed to an nDeriveIterations of %i\n", pMasterKey.second.nDeriveIterations);
 
                 if (!crypter.SetKeyFromPassphrase(strNewWalletPassphrase, pMasterKey.second.vchSalt, pMasterKey.second.nDeriveIterations, pMasterKey.second.nDerivationMethod))
                     return false;
@@ -156,7 +156,7 @@ void CWallet::SetBestChain(const CBlockLocator& loc)
 }
 
 // This class implements an addrIncoming entry that causes pre-0.4
-// clients to crash on startup if reading a private-key-encrypted wallet.
+// clients to crash on startup if reading a private-key-encrypted chest.
 class CCorruptAddress
 {
 public:
@@ -240,7 +240,7 @@ bool CWallet::EncryptWallet(const SecureString& strWalletPassphrase)
     if (kMasterKey.nDeriveIterations < 25000)
         kMasterKey.nDeriveIterations = 25000;
 
-    printf("Encrypting Wallet with an nDeriveIterations of %i\n", kMasterKey.nDeriveIterations);
+    printf("Encrypting Chest with an nDeriveIterations of %i\n", kMasterKey.nDeriveIterations);
 
     if (!crypter.SetKeyFromPassphrase(strWalletPassphrase, kMasterKey.vchSalt, kMasterKey.nDeriveIterations, kMasterKey.nDerivationMethod))
         return false;
@@ -262,7 +262,7 @@ bool CWallet::EncryptWallet(const SecureString& strWalletPassphrase)
         {
             if (fFileBacked)
                 pwalletdbEncryption->TxnAbort();
-            exit(1); //We now probably have half of our keys encrypted in memory, and half not...die and let the user reload their unencrypted wallet.
+            exit(1); //We now probably have half of our keys encrypted in memory, and half not...die and let the user reload their unencrypted chest.
         }
 
         // Encryption was introduced in version 0.4.0
@@ -271,7 +271,7 @@ bool CWallet::EncryptWallet(const SecureString& strWalletPassphrase)
         if (fFileBacked)
         {
             if (!pwalletdbEncryption->TxnCommit())
-                exit(1); //We now have keys encrypted in memory, but no on disk...die to avoid confusion and let the user reload their unencrypted wallet.
+                exit(1); //We now have keys encrypted in memory, but no on disk...die to avoid confusion and let the user reload their unencrypted chest.
 
             delete pwalletdbEncryption;
             pwalletdbEncryption = NULL;
@@ -282,7 +282,7 @@ bool CWallet::EncryptWallet(const SecureString& strWalletPassphrase)
         NewKeyPool();
         Lock();
 
-        // Need to completely rewrite the wallet file; if we don't, bdb might keep
+        // Need to completely rewrite the chest file; if we don't, bdb might keep
         // bits of the unencrypted private key in slack space in the database file.
         CDB::Rewrite(strWalletFile);
 
@@ -295,8 +295,8 @@ bool CWallet::EncryptWallet(const SecureString& strWalletPassphrase)
 void CWallet::WalletUpdateSpent(const CTransaction &tx)
 {
     // Anytime a signature is successfully verified, it's proof the outpoint is spent.
-    // Update the wallet spent flag if it doesn't know due to wallet.dat being
-    // restored from backup or the user making copies of wallet.dat.
+    // Update the chest spent flag if it doesn't know due to chest.dat being
+    // restored from backup or the user making copies of chest.dat.
     {
         LOCK(cs_wallet);
         BOOST_FOREACH(const CTxIn& txin, tx.vin)
@@ -395,7 +395,7 @@ bool CWallet::AddToWallet(const CWalletTx& wtxIn)
     return true;
 }
 
-// Add a transaction to the wallet, or update it.
+// Add a transaction to the chest, or update it.
 // pblock is optional, but should be provided if the transaction is known to be in a block.
 // If fUpdate is true, existing transactions will be updated.
 bool CWallet::AddToWalletIfInvolvingMe(const CTransaction& tx, const CBlock* pblock, bool fUpdate, bool fFindBlock)
@@ -682,7 +682,7 @@ bool CWalletTx::WriteToDisk()
 
 // Scan the block chain (starting in pindexStart) for transactions
 // from or to us. If fUpdate is true, found transactions that already
-// exist in the wallet will be updated.
+// exist in the chest will be updated.
 int CWallet::ScanForWalletTransactions(CBlockIndex* pindexStart, bool fUpdate)
 {
     int ret = 0;
@@ -733,7 +733,7 @@ void CWallet::ReacceptWalletTransactions()
             bool fUpdated = false;
             if (txdb.ReadTxIndex(wtx.GetHash(), txindex))
             {
-                // Update fSpent if a tx got spent somewhere else by a copy of wallet.dat
+                // Update fSpent if a tx got spent somewhere else by a copy of chest.dat
                 if (txindex.vSpent.size() != wtx.vout.size())
                 {
                     printf("ERROR: ReacceptWalletTransactions() : txindex.vSpent.size() %d != wtx.vout.size() %d\n", txindex.vSpent.size(), wtx.vout.size());
@@ -1217,7 +1217,7 @@ bool CWallet::CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey)
             // Take key pair from key pool so it won't be used again
             reservekey.KeepKey();
 
-            // Add tx to wallet, because if it has change it's also ours,
+            // Add tx to chest, because if it has change it's also ours,
             // otherwise just for transaction history.
             AddToWallet(wtxNew);
 
@@ -1261,7 +1261,7 @@ string CWallet::SendMoney(CScript scriptPubKey, int64 nValue, CWalletTx& wtxNew,
 
     if (IsLocked())
     {
-        string strError = _("Error: Wallet locked, unable to create transaction  ");
+        string strError = _("Error: Chest locked, unable to create transaction  ");
         printf("SendMoney() : %s", strError.c_str());
         return strError;
     }
@@ -1280,7 +1280,7 @@ string CWallet::SendMoney(CScript scriptPubKey, int64 nValue, CWalletTx& wtxNew,
         return "ABORTED";
 
     if (!CommitTransaction(wtxNew, reservekey))
-        return _("Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.");
+        return _("Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.");
 
     return "";
 }
@@ -1316,8 +1316,8 @@ int CWallet::LoadWallet(bool& fFirstRunRet)
         if (CDB::Rewrite(strWalletFile, "\x04pool"))
         {
             setKeyPool.clear();
-            // Note: can't top-up keypool here, because wallet is locked.
-            // User will be prompted to unlock wallet the next operation
+            // Note: can't top-up keypool here, because chest is locked.
+            // User will be prompted to unlock chest the next operation
             // the requires a new key.
         }
         nLoadWalletRet = DB_NEED_REWRITE;
@@ -1608,7 +1608,7 @@ void CWallet::UpdatedTransaction(const uint256 &hashTx)
 {
     {
         LOCK(cs_wallet);
-        // Only notify UI if this transaction is in this wallet
+        // Only notify UI if this transaction is in this chest
         map<uint256, CWalletTx>::const_iterator mi = mapWallet.find(hashTx);
         if (mi != mapWallet.end())
             NotifyTransactionChanged(this, hashTx, CT_UPDATED);

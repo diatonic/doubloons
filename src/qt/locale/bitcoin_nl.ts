@@ -166,32 +166,32 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="33"/>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the chest.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Vul een nieuw wachtwoord in voor uw portemonnee. &lt;br/&gt; Gebruik een wachtwoord van &lt;b&gt;10 of meer lukrake karakters&lt;/b&gt;, of &lt;b&gt; acht of meer woorden&lt;/b&gt; . </translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="34"/>
-        <source>Encrypt wallet</source>
+        <source>Encrypt chest</source>
         <translation>Versleutel portemonnee</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="37"/>
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <source>This operation needs your chest passphrase to unlock the chest.</source>
         <translation>Deze operatie vereist uw portemonneewachtwoord om de portemonnee te openen.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="42"/>
-        <source>Unlock wallet</source>
+        <source>Unlock chest</source>
         <translation>Open portemonnee</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="45"/>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <source>This operation needs your chest passphrase to decrypt the chest.</source>
         <translation>Deze operatie vereist uw portemonneewachtwoord om de portemonnee te ontsleutelen</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="50"/>
-        <source>Decrypt wallet</source>
+        <source>Decrypt chest</source>
         <translation>Ontsleutel portemonnee</translation>
     </message>
     <message>
@@ -201,30 +201,30 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="54"/>
-        <source>Enter the old and new passphrase to the wallet.</source>
+        <source>Enter the old and new passphrase to the chest.</source>
         <translation>Vul uw oude en nieuwe portemonneewachtwoord in.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="100"/>
-        <source>Confirm wallet encryption</source>
+        <source>Confirm chest encryption</source>
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="101"/>
-        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
-Are you sure you wish to encrypt your wallet?</source>
+        <source>WARNING: If you encrypt your chest and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
+Are you sure you wish to encrypt your chest?</source>
         <translation>WAARSCHUWING: Wanneer uw portemonnee wordt versleuteld en u verliest uw wachtwoord, dan verliest u &lt;b&gt;AL UW BITCOINS&lt;/b&gt;!
 Bent u er zeker van uw dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="110"/>
         <location filename="../askpassphrasedialog.cpp" line="159"/>
-        <source>Wallet encrypted</source>
+        <source>Chest encrypted</source>
         <translation>Portemonnee versleuteld</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="111"/>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your chest cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation>Bitcoin zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw bitcoins stelen.</translation>
     </message>
     <message>
@@ -238,12 +238,12 @@ Bent u er zeker van uw dat u uw portemonnee wilt versleutelen?</translation>
         <location filename="../askpassphrasedialog.cpp" line="123"/>
         <location filename="../askpassphrasedialog.cpp" line="165"/>
         <location filename="../askpassphrasedialog.cpp" line="171"/>
-        <source>Wallet encryption failed</source>
+        <source>Chest encryption failed</source>
         <translation>Portemonneeversleuteling mislukt</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="117"/>
-        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <source>Chest encryption failed due to an internal error. Your chest was not encrypted.</source>
         <translation>Portemonneeversleuteling mislukt door een interne fout, Uw portemonnee is niet versleuteld.</translation>
     </message>
     <message>
@@ -254,24 +254,24 @@ Bent u er zeker van uw dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="135"/>
-        <source>Wallet unlock failed</source>
+        <source>Chest unlock failed</source>
         <translation>Portemonnee openen mislukt</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="136"/>
         <location filename="../askpassphrasedialog.cpp" line="147"/>
         <location filename="../askpassphrasedialog.cpp" line="166"/>
-        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the chest decryption was incorrect.</source>
         <translation>Het opgegeven wachtwoord voor de portemonnee-ontsleuteling is niet correct.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="146"/>
-        <source>Wallet decryption failed</source>
+        <source>Chest decryption failed</source>
         <translation>Portemonnee-ontsleuteling mislukt</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="160"/>
-        <source>Wallet passphrase was succesfully changed.</source>
+        <source>Chest passphrase was succesfully changed.</source>
         <translation>Portemonneewachtwoord is succesvol gewijzigd</translation>
     </message>
 </context>
@@ -279,7 +279,7 @@ Bent u er zeker van uw dat u uw portemonnee wilt versleutelen?</translation>
     <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="73"/>
-        <source>Bitcoin Wallet</source>
+        <source>Bitcoin Chest</source>
         <translation>Bitcoin-portemonnee</translation>
     </message>
     <message>
@@ -304,7 +304,7 @@ Bent u er zeker van uw dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="186"/>
-        <source>Show general overview of wallet</source>
+        <source>Show general overview of chest</source>
         <translation>Toon algemeen overzicht van de portemonnee</translation>
     </message>
     <message>
@@ -384,12 +384,12 @@ Bent u er zeker van uw dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="252"/>
-        <source>&amp;Encrypt Wallet...</source>
+        <source>&amp;Encrypt Chest...</source>
         <translation>&amp;Versleutel Portemonnee...</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="255"/>
-        <source>&amp;Backup Wallet...</source>
+        <source>&amp;Backup Chest...</source>
         <translation>&amp;Backup Portemonnee...</translation>
     </message>
     <message>
@@ -434,17 +434,17 @@ Bent u er zeker van uw dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="253"/>
-        <source>Encrypt or decrypt wallet</source>
+        <source>Encrypt or decrypt chest</source>
         <translation>Versleutel of ontsleutel portemonnee</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="256"/>
-        <source>Backup wallet to another location</source>
+        <source>Backup chest to another location</source>
         <translation>&amp;Backup portemonnee naar een andere locatie</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="258"/>
-        <source>Change the passphrase used for wallet encryption</source>
+        <source>Change the passphrase used for chest encryption</source>
         <translation>wijzig het wachtwoord voor uw portemonneversleuteling</translation>
     </message>
     <message>
@@ -584,22 +584,22 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="804"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;geopend&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="812"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;gesloten&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="835"/>
-        <source>Backup Wallet</source>
+        <source>Backup Chest</source>
         <translation>Backup Portemonnee</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="835"/>
-        <source>Wallet Data (*.dat)</source>
+        <source>Chest Data (*.dat)</source>
         <translation>Portemonnee-data (*.dat)</translation>
     </message>
     <message>
@@ -609,7 +609,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="838"/>
-        <source>There was an error trying to save the wallet data to the new location.</source>
+        <source>There was an error trying to save the chest data to the new location.</source>
         <translation>Er is een fout opgetreden bij het wegschrijven van de portemonnee-data naar de nieuwe locatie.</translation>
     </message>
     <message>
@@ -738,7 +738,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="101"/>
-        <source>Could not unlock wallet.</source>
+        <source>Could not unlock chest.</source>
         <translation>Kon de portemonnee niet openen.</translation>
     </message>
     <message>
@@ -796,7 +796,7 @@ Adres: %4
     <name>MainOptionsPage</name>
     <message>
         <location filename="../optionsdialog.cpp" line="227"/>
-        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
+        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The chest is always detached.</source>
         <translation>Ontkoppel blok- en adresdatabases bij afsluiten. Dit betekent dat ze verplaatst kunnen worden naar een andere map, maar het vertraagt het afsluiten. De portemonnee wordt altijd ontkoppeld.</translation>
     </message>
     <message>
@@ -1007,7 +1007,7 @@ Adres: %4
     <message>
         <location filename="../forms/overviewpage.ui" line="47"/>
         <location filename="../forms/overviewpage.ui" line="204"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your chest automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automaticsh met het Bitcoinnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
@@ -1027,7 +1027,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="40"/>
-        <source>Wallet</source>
+        <source>Chest</source>
         <translation>Portemonnee</translation>
     </message>
     <message>
@@ -1047,7 +1047,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="154"/>
-        <source>Total number of transactions in wallet</source>
+        <source>Total number of transactions in chest</source>
         <translation>Totaal aantal transacties in uw portemonnee</translation>
     </message>
     <message>
@@ -1352,8 +1352,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fout: De transactie was afgewezen. Dit kan gebeuren als u eerder uitgegeven munten opnieuw wilt versturen, zoals wanneer u een kopie van uw portemonneebestand (wallet.dat) heeft gebruikt en in de kopie deze munten zijn uitgegeven, maar in de huidige portemonnee deze nog niet als zodanig zijn gemarkeerd.</translation>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Fout: De transactie was afgewezen. Dit kan gebeuren als u eerder uitgegeven munten opnieuw wilt versturen, zoals wanneer u een kopie van uw portemonneebestand (chest.dat) heeft gebruikt en in de kopie deze munten zijn uitgegeven, maar in de huidige portemonnee deze nog niet als zodanig zijn gemarkeerd.</translation>
     </message>
 </context>
 <context>
@@ -2194,7 +2194,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="101"/>
-        <source>Upgrade wallet to latest format</source>
+        <source>Upgrade chest to latest format</source>
         <translation>Vernieuw portemonnee naar nieuwste versie</translation>
     </message>
     <message>
@@ -2205,7 +2205,7 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="103"/>
-        <source>Rescan the block chain for missing wallet transactions</source>
+        <source>Rescan the block chain for missing chest transactions</source>
         <translation>Doorzoek de blokkenketen op ontbrekende portemonnee-transacties</translation>
     </message>
     <message>
@@ -2316,23 +2316,23 @@ SSL-opties: (zie de Bitcoin wiki voor SSL-instructies)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Fout bij laden wallet.dat: Portemonnee corrupt</translation>
+        <source>Error loading chest.dat: Chest corrupted</source>
+        <translation>Fout bij laden chest.dat: Portemonnee corrupt</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van Bitcoin</translation>
+        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
+        <translation>Fout bij laden chest.dat: Portemonnee vereist een nieuwere versie van Bitcoin</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
+        <source>Chest needed to be rewritten: restart Bitcoin to complete</source>
         <translation>Portemonnee moest herschreven worden: Herstart Bitcoin om te voltooien</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading wallet.dat</source>
-        <translation>Fout bij laden wallet.dat</translation>
+        <source>Error loading chest.dat</source>
+        <translation>Fout bij laden chest.dat</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2381,7 +2381,7 @@ SSL-opties: (zie de Bitcoin wiki voor SSL-instructies)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="31"/>
-        <source>Error: Wallet locked, unable to create transaction  </source>
+        <source>Error: Chest locked, unable to create transaction  </source>
         <translation>Fout: Portemonnee gesloten, transactie maken niet mogelijk </translation>
     </message>
     <message>
@@ -2401,8 +2401,8 @@ SSL-opties: (zie de Bitcoin wiki voor SSL-instructies)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fout: De transactie was afgewezen. Dit kan gebeuren als u eerder uitgegeven munten opnieuw wilt versturen, zoals wanneer u een kopie van uw wallet.dat heeft gebruikt en in de kopie deze munten zijn gemarkeerd als uitgegeven, maar in de huidige nog niet.</translation>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Fout: De transactie was afgewezen. Dit kan gebeuren als u eerder uitgegeven munten opnieuw wilt versturen, zoals wanneer u een kopie van uw chest.dat heeft gebruikt en in de kopie deze munten zijn gemarkeerd als uitgegeven, maar in de huidige nog niet.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="41"/>
@@ -2466,12 +2466,12 @@ SSL-opties: (zie de Bitcoin wiki voor SSL-instructies)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="133"/>
-        <source>Loading wallet...</source>
+        <source>Loading chest...</source>
         <translation>Portemonnee aan het laden...</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="138"/>
-        <source>Cannot downgrade wallet</source>
+        <source>Cannot downgrade chest</source>
         <translation>Kan portemonnee niet downgraden</translation>
     </message>
     <message>

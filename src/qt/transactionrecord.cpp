@@ -1,6 +1,6 @@
 #include "transactionrecord.h"
 
-#include "wallet.h"
+#include "chest.h"
 #include "base58.h"
 
 /* Return positive answer if transaction should be shown in list.
@@ -31,7 +31,7 @@ bool TransactionRecord::showTransaction(const CWalletTx &wtx)
 /*
  * Decompose CWallet transaction to model transaction records.
  */
-QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *wallet, const CWalletTx &wtx)
+QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *chest, const CWalletTx &wtx)
 {
     QList<TransactionRecord> parts;
     int64 nTime = wtx.GetTxTime();
@@ -48,7 +48,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
         //
         BOOST_FOREACH(const CTxOut& txout, wtx.vout)
         {
-            if(wallet->IsMine(txout))
+            if(chest->IsMine(txout))
             {
                 TransactionRecord sub(hash, nTime);
                 CTxDestination address;
@@ -59,7 +59,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
                     // Generated
                     sub.type = TransactionRecord::Generated;
                 }
-                else if (ExtractDestination(txout.scriptPubKey, address) && IsMine(*wallet, address))
+                else if (ExtractDestination(txout.scriptPubKey, address) && IsMine(*chest, address))
                 {
                     // Received by Bitcoin Address
                     sub.type = TransactionRecord::RecvWithAddress;
@@ -80,11 +80,11 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
     {
         bool fAllFromMe = true;
         BOOST_FOREACH(const CTxIn& txin, wtx.vin)
-            fAllFromMe = fAllFromMe && wallet->IsMine(txin);
+            fAllFromMe = fAllFromMe && chest->IsMine(txin);
 
         bool fAllToMe = true;
         BOOST_FOREACH(const CTxOut& txout, wtx.vout)
-            fAllToMe = fAllToMe && wallet->IsMine(txout);
+            fAllToMe = fAllToMe && chest->IsMine(txout);
 
         if (fAllFromMe && fAllToMe)
         {
@@ -107,7 +107,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
                 TransactionRecord sub(hash, nTime);
                 sub.idx = parts.size();
 
-                if(wallet->IsMine(txout))
+                if(chest->IsMine(txout))
                 {
                     // Ignore parts sent to self, as this is usually the change
                     // from a transaction sent back to our own address.

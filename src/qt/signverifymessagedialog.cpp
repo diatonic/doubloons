@@ -8,7 +8,7 @@
 #include "main.h"
 #include "optionsmodel.h"
 #include "walletmodel.h"
-#include "wallet.h"
+#include "chest.h"
 
 #include <string>
 #include <vector>
@@ -126,7 +126,7 @@ void SignVerifyMessageDialog::on_signMessageButton_SM_clicked()
     if (!ctx.isValid())
     {
         ui->statusLabel_SM->setStyleSheet("QLabel { color: red; }");
-        ui->statusLabel_SM->setText(tr("Wallet unlock was canceled."));
+        ui->statusLabel_SM->setText(tr("Chest unlock was canceled."));
         return;
     }
 

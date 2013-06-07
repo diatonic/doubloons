@@ -165,32 +165,32 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="33"/>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the chest.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>הכנס את הסיסמה החדשה לארנק. &lt;br/&gt;אנא השתמש בסיסמה המכילה &lt;b&gt;10 תוים אקראיים או יותר&lt;/b&gt;, או &lt;b&gt;שמונה מילים או יותר&lt;/b&gt;.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="34"/>
-        <source>Encrypt wallet</source>
+        <source>Encrypt chest</source>
         <translation>הצפנת ארנק</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="37"/>
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <source>This operation needs your chest passphrase to unlock the chest.</source>
         <translation>הפעולה הזו דורשת את סיסמת הארנק שלך בשביל לפתוח את הארנק.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="42"/>
-        <source>Unlock wallet</source>
+        <source>Unlock chest</source>
         <translation>פתיחת ארנק</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="45"/>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <source>This operation needs your chest passphrase to decrypt the chest.</source>
         <translation>הפעולה הזו דורשת את סיסמת הארנק שלך בשביל לפענח את הארנק.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="50"/>
-        <source>Decrypt wallet</source>
+        <source>Decrypt chest</source>
         <translation>פענוח ארנק</translation>
     </message>
     <message>
@@ -200,30 +200,30 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="54"/>
-        <source>Enter the old and new passphrase to the wallet.</source>
+        <source>Enter the old and new passphrase to the chest.</source>
         <translation>הכנס את הסיסמות הישנה והחדשה לארנק.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="100"/>
-        <source>Confirm wallet encryption</source>
+        <source>Confirm chest encryption</source>
         <translation>אשר הצפנת ארנק</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="101"/>
-        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
-Are you sure you wish to encrypt your wallet?</source>
+        <source>WARNING: If you encrypt your chest and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
+Are you sure you wish to encrypt your chest?</source>
         <translation>אזהרה: אם תצפין את הארנק שלך ותאבד את הסיסמה אתה &lt;b&gt;תאבד את כל הביטקוין שלך&lt;/b&gt;!
 אתה בטוח שברצונך להצפין את הארנק?</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="110"/>
         <location filename="../askpassphrasedialog.cpp" line="159"/>
-        <source>Wallet encrypted</source>
+        <source>Chest encrypted</source>
         <translation>הארנק הוצפן</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="111"/>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your chest cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation>ביטקוין ייסגר עכשיו כדי להשלים את תהליך ההצפנה. זכור שהצפנת הארנק שלך אינו יכול להגן באופן מלא על הביטקוינים שלך מתוכנות זדוניות המושתלות על המחשב.</translation>
     </message>
     <message>
@@ -237,12 +237,12 @@ Are you sure you wish to encrypt your wallet?</source>
         <location filename="../askpassphrasedialog.cpp" line="123"/>
         <location filename="../askpassphrasedialog.cpp" line="165"/>
         <location filename="../askpassphrasedialog.cpp" line="171"/>
-        <source>Wallet encryption failed</source>
+        <source>Chest encryption failed</source>
         <translation>הצפנת הארנק נכשלה</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="117"/>
-        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <source>Chest encryption failed due to an internal error. Your chest was not encrypted.</source>
         <translation>הצפנת הארנק נכשלה עקב שגיאה פנימית. הארנק שלך לא הוצפן.</translation>
     </message>
     <message>
@@ -253,24 +253,24 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="135"/>
-        <source>Wallet unlock failed</source>
+        <source>Chest unlock failed</source>
         <translation>פתיחת הארנק נכשלה</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="136"/>
         <location filename="../askpassphrasedialog.cpp" line="147"/>
         <location filename="../askpassphrasedialog.cpp" line="166"/>
-        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the chest decryption was incorrect.</source>
         <translation>הסיסמה שהוכנסה לפענוח הארנק שגויה.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="146"/>
-        <source>Wallet decryption failed</source>
+        <source>Chest decryption failed</source>
         <translation>פענוח הארנק נכשל</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="160"/>
-        <source>Wallet passphrase was succesfully changed.</source>
+        <source>Chest passphrase was succesfully changed.</source>
         <translation>סיסמת הארנק שונתה בהצלחה.</translation>
     </message>
 </context>
@@ -278,7 +278,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="73"/>
-        <source>Bitcoin Wallet</source>
+        <source>Bitcoin Chest</source>
         <translation>ארנק ביטקוין</translation>
     </message>
     <message>
@@ -303,7 +303,7 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="186"/>
-        <source>Show general overview of wallet</source>
+        <source>Show general overview of chest</source>
         <translation>הצג סקירה כללית של הארנק</translation>
     </message>
     <message>
@@ -383,12 +383,12 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="252"/>
-        <source>&amp;Encrypt Wallet...</source>
+        <source>&amp;Encrypt Chest...</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="255"/>
-        <source>&amp;Backup Wallet...</source>
+        <source>&amp;Backup Chest...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -433,17 +433,17 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="253"/>
-        <source>Encrypt or decrypt wallet</source>
+        <source>Encrypt or decrypt chest</source>
         <translation>הצפן או פענח ארנק</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="256"/>
-        <source>Backup wallet to another location</source>
+        <source>Backup chest to another location</source>
         <translation>גיבוי הארנק למקום אחר</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="258"/>
-        <source>Change the passphrase used for wallet encryption</source>
+        <source>Change the passphrase used for chest encryption</source>
         <translation>שנה את הסיסמה להצפנת הארנק</translation>
     </message>
     <message>
@@ -582,22 +582,22 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="804"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>הארנק &lt;b&gt;מוצפן&lt;/b&gt; וכרגע &lt;b&gt;פתוח&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="812"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>הארנק &lt;b&gt;מוצפן&lt;/b&gt; וכרגע &lt;b&gt;נעול&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="835"/>
-        <source>Backup Wallet</source>
+        <source>Backup Chest</source>
         <translation>גיבוי ארנק</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="835"/>
-        <source>Wallet Data (*.dat)</source>
+        <source>Chest Data (*.dat)</source>
         <translation>נתוני ארנק (*.dat)</translation>
     </message>
     <message>
@@ -607,7 +607,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="838"/>
-        <source>There was an error trying to save the wallet data to the new location.</source>
+        <source>There was an error trying to save the chest data to the new location.</source>
         <translation>היתה שגיאה בניסיון לשמור את מידע הארנק למיקום החדש.</translation>
     </message>
     <message>
@@ -736,7 +736,7 @@ Address: %4
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="101"/>
-        <source>Could not unlock wallet.</source>
+        <source>Could not unlock chest.</source>
         <translation>פתיחת הארנק נכשלה.</translation>
     </message>
     <message>
@@ -793,7 +793,7 @@ Address: %4
     <name>MainOptionsPage</name>
     <message>
         <location filename="../optionsdialog.cpp" line="227"/>
-        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
+        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The chest is always detached.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1004,7 +1004,7 @@ Address: %4
     <message>
         <location filename="../forms/overviewpage.ui" line="47"/>
         <location filename="../forms/overviewpage.ui" line="204"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your chest automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1024,7 +1024,7 @@ Address: %4
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="40"/>
-        <source>Wallet</source>
+        <source>Chest</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1044,7 +1044,7 @@ Address: %4
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="154"/>
-        <source>Total number of transactions in wallet</source>
+        <source>Total number of transactions in chest</source>
         <translation>המספר הכולל של פעולות בארנק</translation>
     </message>
     <message>
@@ -1349,7 +1349,7 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2172,7 +2172,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="101"/>
-        <source>Upgrade wallet to latest format</source>
+        <source>Upgrade chest to latest format</source>
         <translation>שדרג את הארנק לפורמט העדכני</translation>
     </message>
     <message>
@@ -2182,7 +2182,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="103"/>
-        <source>Rescan the block chain for missing wallet transactions</source>
+        <source>Rescan the block chain for missing chest transactions</source>
         <translation>סרוק מחדש את שרשרת הבלוקים למציאת פעולות חסרות בארנק</translation>
     </message>
     <message>
@@ -2288,23 +2288,23 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>שגיאה בטעינת הקובץ wallet.dat: הארנק מושחת</translation>
+        <source>Error loading chest.dat: Chest corrupted</source>
+        <translation>שגיאה בטעינת הקובץ chest.dat: הארנק מושחת</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>שגיאה בטעינת הקובץ wallet.dat: הארנק דורש גרסה חדשה יותר של ביטקוין</translation>
+        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
+        <translation>שגיאה בטעינת הקובץ chest.dat: הארנק דורש גרסה חדשה יותר של ביטקוין</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
+        <source>Chest needed to be rewritten: restart Bitcoin to complete</source>
         <translation>יש לכתוב מחדש את הארנק: אתחל את ביטקוין לסיום</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading wallet.dat</source>
-        <translation>שגיאה בטעינת הקובץ wallet.dat</translation>
+        <source>Error loading chest.dat</source>
+        <translation>שגיאה בטעינת הקובץ chest.dat</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2353,7 +2353,7 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="31"/>
-        <source>Error: Wallet locked, unable to create transaction  </source>
+        <source>Error: Chest locked, unable to create transaction  </source>
         <translation>שגיאה: הארנק נעול, לא ניתן ליצור פעולה</translation>
     </message>
     <message>
@@ -2373,8 +2373,8 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>שגיאה: הפעולה נדחתה.  זה עשוי לקרות אם חלק מהמטבעות בארנק שלך כבר נוצלו, למשל אם השתמשת בעותק של הקובץ wallet.dat ומטבעות נוצלו בהעתק אך לא סומנו כמנוצלות כאן.</translation>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>שגיאה: הפעולה נדחתה.  זה עשוי לקרות אם חלק מהמטבעות בארנק שלך כבר נוצלו, למשל אם השתמשת בעותק של הקובץ chest.dat ומטבעות נוצלו בהעתק אך לא סומנו כמנוצלות כאן.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="41"/>
@@ -2438,12 +2438,12 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="133"/>
-        <source>Loading wallet...</source>
+        <source>Loading chest...</source>
         <translation>טוען ארנק...</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="138"/>
-        <source>Cannot downgrade wallet</source>
+        <source>Cannot downgrade chest</source>
         <translation>לא יכול להוריד דרגת הארנק</translation>
     </message>
     <message>

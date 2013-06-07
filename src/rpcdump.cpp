@@ -38,7 +38,7 @@ Value importprivkey(const Array& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
             "importprivkey <doubloons private key> [label]\n"
-            "Adds a private key (as returned by dumpprivkey) to your wallet.");
+            "Adds a private key (as returned by dumpprivkey) to your chest.");
 
     string strSecret = params[0].get_str();
     string strLabel = "";
@@ -61,7 +61,7 @@ Value importprivkey(const Array& params, bool fHelp)
         pwalletMain->SetAddressBookName(vchAddress, strLabel);
 
         if (!pwalletMain->AddKey(key))
-            throw JSONRPCError(-4,"Error adding key to wallet");
+            throw JSONRPCError(-4,"Error adding key to chest");
 
         pwalletMain->ScanForWalletTransactions(pindexGenesisBlock, true);
         pwalletMain->ReacceptWalletTransactions();

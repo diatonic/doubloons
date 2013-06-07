@@ -1488,7 +1488,7 @@ bool IsMine(const CKeyStore &keystore, const CScript& scriptPubKey)
         // keys involved. multi-signature transactions that are
         // partially owned (somebody else has a key that can spend
         // them) enable spend-out-from-under-you attacks, especially
-        // in shared-wallet situations.
+        // in shared-chest situations.
         vector<valtype> keys(vSolutions.begin()+1, vSolutions.begin()+vSolutions.size()-1);
         return HaveKeys(keys, keystore) == keys.size();
     }

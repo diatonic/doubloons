@@ -5,23 +5,23 @@
 #include "transactiontablemodel.h"
 
 #include "ui_interface.h"
-#include "wallet.h"
+#include "chest.h"
 #include "walletdb.h" // for BackupWallet
 #include "base58.h"
 
 #include <QSet>
 #include <QTimer>
 
-WalletModel::WalletModel(CWallet *wallet, OptionsModel *optionsModel, QObject *parent) :
-    QObject(parent), wallet(wallet), optionsModel(optionsModel), addressTableModel(0),
+WalletModel::WalletModel(CWallet *chest, OptionsModel *optionsModel, QObject *parent) :
+    QObject(parent), chest(chest), optionsModel(optionsModel), addressTableModel(0),
     transactionTableModel(0),
     cachedBalance(0), cachedUnconfirmedBalance(0), cachedImmatureBalance(0),
     cachedNumTransactions(0),
     cachedEncryptionStatus(Unencrypted),
     cachedNumBlocks(0)
 {
-    addressTableModel = new AddressTableModel(wallet, this);
-    transactionTableModel = new TransactionTableModel(wallet, this);
+    addressTableModel = new AddressTableModel(chest, this);
+    transactionTableModel = new TransactionTableModel(chest, this);
 
     // This timer will be fired repeatedly to update the balance
     pollTimer = new QTimer(this);
@@ -38,25 +38,25 @@ WalletModel::~WalletModel()
 
 qint64 WalletModel::getBalance() const
 {
-    return wallet->GetBalance();
+    return chest->GetBalance();
 }
 
 qint64 WalletModel::getUnconfirmedBalance() const
 {
-    return wallet->GetUnconfirmedBalance();
+    return chest->GetUnconfirmedBalance();
 }
 
 qint64 WalletModel::getImmatureBalance() const
 {
-    return wallet->GetImmatureBalance();
+    return chest->GetImmatureBalance();
 }
 
 int WalletModel::getNumTransactions() const
 {
     int numTransactions = 0;
     {
-        LOCK(wallet->cs_wallet);
-        numTransactions = wallet->mapWallet.size();
+        LOCK(chest->cs_wallet);
+        numTransactions = chest->mapWallet.size();
     }
     return numTransactions;
 }
@@ -165,7 +165,7 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(const QList<SendCoinsRecipie
     }
 
     {
-        LOCK2(cs_main, wallet->cs_wallet);
+        LOCK2(cs_main, chest->cs_wallet);
 
         // Sendmany
         std::vector<std::pair<CScript, int64> > vecSend;
@@ -177,13 +177,13 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(const QList<SendCoinsRecipie
         }
 
         CWalletTx wtx;
-        CReserveKey keyChange(wallet);
+        CReserveKey keyChange(chest);
         int64 nFeeRequired = 0;
-        bool fCreated = wallet->CreateTransaction(vecSend, wtx, keyChange, nFeeRequired);
+        bool fCreated = chest->CreateTransaction(vecSend, wtx, keyChange, nFeeRequired);
 
         if(!fCreated)
         {
-            if((total + nFeeRequired) > wallet->GetBalance())
+            if((total + nFeeRequired) > chest->GetBalance())
             {
                 return SendCoinsReturn(AmountWithFeeExceedsBalance, nFeeRequired);
             }
@@ -193,7 +193,7 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(const QList<SendCoinsRecipie
         {
             return Aborted;
         }
-        if(!wallet->CommitTransaction(wtx, keyChange))
+        if(!chest->CommitTransaction(wtx, keyChange))
         {
             return TransactionCommitFailed;
         }
@@ -207,14 +207,14 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(const QList<SendCoinsRecipie
         CTxDestination dest = CBitcoinAddress(strAddress).Get();
         std::string strLabel = rcp.label.toStdString();
         {
-            LOCK(wallet->cs_wallet);
+            LOCK(chest->cs_wallet);
 
-            std::map<CTxDestination, std::string>::iterator mi = wallet->mapAddressBook.find(dest);
+            std::map<CTxDestination, std::string>::iterator mi = chest->mapAddressBook.find(dest);
 
             // Check if we have a new address or an updated label
-            if (mi == wallet->mapAddressBook.end() || mi->second != strLabel)
+            if (mi == chest->mapAddressBook.end() || mi->second != strLabel)
             {
-                wallet->SetAddressBookName(dest, strLabel);
+                chest->SetAddressBookName(dest, strLabel);
             }
         }
     }
@@ -239,11 +239,11 @@ TransactionTableModel *WalletModel::getTransactionTableModel()
 
 WalletModel::EncryptionStatus WalletModel::getEncryptionStatus() const
 {
-    if(!wallet->IsCrypted())
+    if(!chest->IsCrypted())
     {
         return Unencrypted;
     }
-    else if(wallet->IsLocked())
+    else if(chest->IsLocked())
     {
         return Locked;
     }
@@ -258,7 +258,7 @@ bool WalletModel::setWalletEncrypted(bool encrypted, const SecureString &passphr
     if(encrypted)
     {
         // Encrypt
-        return wallet->EncryptWallet(passphrase);
+        return chest->EncryptWallet(passphrase);
     }
     else
     {
@@ -272,12 +272,12 @@ bool WalletModel::setWalletLocked(bool locked, const SecureString &passPhrase)
     if(locked)
     {
         // Lock
-        return wallet->Lock();
+        return chest->Lock();
     }
     else
     {
         // Unlock
-        return wallet->Unlock(passPhrase);
+        return chest->Unlock(passPhrase);
     }
 }
 
@@ -285,26 +285,26 @@ bool WalletModel::changePassphrase(const SecureString &oldPass, const SecureStri
 {
     bool retval;
     {
-        LOCK(wallet->cs_wallet);
-        wallet->Lock(); // Make sure wallet is locked before attempting pass change
-        retval = wallet->ChangeWalletPassphrase(oldPass, newPass);
+        LOCK(chest->cs_wallet);
+        chest->Lock(); // Make sure chest is locked before attempting pass change
+        retval = chest->ChangeWalletPassphrase(oldPass, newPass);
     }
     return retval;
 }
 
 bool WalletModel::backupWallet(const QString &filename)
 {
-    return BackupWallet(*wallet, filename.toLocal8Bit().data());
+    return BackupWallet(*chest, filename.toLocal8Bit().data());
 }
 
 // Handlers for core signals
-static void NotifyKeyStoreStatusChanged(WalletModel *walletmodel, CCryptoKeyStore *wallet)
+static void NotifyKeyStoreStatusChanged(WalletModel *walletmodel, CCryptoKeyStore *chest)
 {
     OutputDebugStringF("NotifyKeyStoreStatusChanged\n");
     QMetaObject::invokeMethod(walletmodel, "updateStatus", Qt::QueuedConnection);
 }
 
-static void NotifyAddressBookChanged(WalletModel *walletmodel, CWallet *wallet, const CTxDestination &address, const std::string &label, bool isMine, ChangeType status)
+static void NotifyAddressBookChanged(WalletModel *walletmodel, CWallet *chest, const CTxDestination &address, const std::string &label, bool isMine, ChangeType status)
 {
     OutputDebugStringF("NotifyAddressBookChanged %s %s isMine=%i status=%i\n", CBitcoinAddress(address).ToString().c_str(), label.c_str(), isMine, status);
     QMetaObject::invokeMethod(walletmodel, "updateAddressBook", Qt::QueuedConnection,
@@ -314,7 +314,7 @@ static void NotifyAddressBookChanged(WalletModel *walletmodel, CWallet *wallet, 
                               Q_ARG(int, status));
 }
 
-static void NotifyTransactionChanged(WalletModel *walletmodel, CWallet *wallet, const uint256 &hash, ChangeType status)
+static void NotifyTransactionChanged(WalletModel *walletmodel, CWallet *chest, const uint256 &hash, ChangeType status)
 {
     OutputDebugStringF("NotifyTransactionChanged %s status=%i\n", hash.GetHex().c_str(), status);
     QMetaObject::invokeMethod(walletmodel, "updateTransaction", Qt::QueuedConnection,
@@ -324,18 +324,18 @@ static void NotifyTransactionChanged(WalletModel *walletmodel, CWallet *wallet, 
 
 void WalletModel::subscribeToCoreSignals()
 {
-    // Connect signals to wallet
-    wallet->NotifyStatusChanged.connect(boost::bind(&NotifyKeyStoreStatusChanged, this, _1));
-    wallet->NotifyAddressBookChanged.connect(boost::bind(NotifyAddressBookChanged, this, _1, _2, _3, _4, _5));
-    wallet->NotifyTransactionChanged.connect(boost::bind(NotifyTransactionChanged, this, _1, _2, _3));
+    // Connect signals to chest
+    chest->NotifyStatusChanged.connect(boost::bind(&NotifyKeyStoreStatusChanged, this, _1));
+    chest->NotifyAddressBookChanged.connect(boost::bind(NotifyAddressBookChanged, this, _1, _2, _3, _4, _5));
+    chest->NotifyTransactionChanged.connect(boost::bind(NotifyTransactionChanged, this, _1, _2, _3));
 }
 
 void WalletModel::unsubscribeFromCoreSignals()
 {
-    // Disconnect signals from wallet
-    wallet->NotifyStatusChanged.disconnect(boost::bind(&NotifyKeyStoreStatusChanged, this, _1));
-    wallet->NotifyAddressBookChanged.disconnect(boost::bind(NotifyAddressBookChanged, this, _1, _2, _3, _4, _5));
-    wallet->NotifyTransactionChanged.disconnect(boost::bind(NotifyTransactionChanged, this, _1, _2, _3));
+    // Disconnect signals from chest
+    chest->NotifyStatusChanged.disconnect(boost::bind(&NotifyKeyStoreStatusChanged, this, _1));
+    chest->NotifyAddressBookChanged.disconnect(boost::bind(NotifyAddressBookChanged, this, _1, _2, _3, _4, _5));
+    chest->NotifyTransactionChanged.disconnect(boost::bind(NotifyTransactionChanged, this, _1, _2, _3));
 }
 
 // WalletModel::UnlockContext implementation
@@ -344,17 +344,17 @@ WalletModel::UnlockContext WalletModel::requestUnlock()
     bool was_locked = getEncryptionStatus() == Locked;
     if(was_locked)
     {
-        // Request UI to unlock wallet
+        // Request UI to unlock chest
         emit requireUnlock();
     }
-    // If wallet is still locked, unlock was failed or cancelled, mark context as invalid
+    // If chest is still locked, unlock was failed or cancelled, mark context as invalid
     bool valid = getEncryptionStatus() != Locked;
 
     return UnlockContext(this, valid, was_locked);
 }
 
-WalletModel::UnlockContext::UnlockContext(WalletModel *wallet, bool valid, bool relock):
-        wallet(wallet),
+WalletModel::UnlockContext::UnlockContext(WalletModel *chest, bool valid, bool relock):
+        chest(chest),
         valid(valid),
         relock(relock)
 {
@@ -364,13 +364,13 @@ WalletModel::UnlockContext::~UnlockContext()
 {
     if(valid && relock)
     {
-        wallet->setWalletLocked(true);
+        chest->setWalletLocked(true);
     }
 }
 
 void WalletModel::UnlockContext::CopyFrom(const UnlockContext& rhs)
 {
-    // Transfer context; old object no longer relocks wallet
+    // Transfer context; old object no longer relocks chest
     *this = rhs;
     rhs.relock = false;
 }
