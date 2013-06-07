@@ -1352,8 +1352,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fout: De transactie was afgewezen. Dit kan gebeuren als u eerder uitgegeven munten opnieuw wilt versturen, zoals wanneer u een kopie van uw portemonneebestand (chest.dat) heeft gebruikt en in de kopie deze munten zijn uitgegeven, maar in de huidige portemonnee deze nog niet als zodanig zijn gemarkeerd.</translation>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Fout: De transactie was afgewezen. Dit kan gebeuren als u eerder uitgegeven munten opnieuw wilt versturen, zoals wanneer u een kopie van uw portemonneebestand (wallet.dat) heeft gebruikt en in de kopie deze munten zijn uitgegeven, maar in de huidige portemonnee deze nog niet als zodanig zijn gemarkeerd.</translation>
     </message>
 </context>
 <context>
@@ -2316,13 +2316,13 @@ SSL-opties: (zie de Bitcoin wiki voor SSL-instructies)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading chest.dat: Chest corrupted</source>
-        <translation>Fout bij laden chest.dat: Portemonnee corrupt</translation>
+        <source>Error loading wallet.dat: Chest corrupted</source>
+        <translation>Fout bij laden wallet.dat: Portemonnee corrupt</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
-        <translation>Fout bij laden chest.dat: Portemonnee vereist een nieuwere versie van Bitcoin</translation>
+        <source>Error loading wallet.dat: Chest requires newer version of Bitcoin</source>
+        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van Bitcoin</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
@@ -2331,8 +2331,8 @@ SSL-opties: (zie de Bitcoin wiki voor SSL-instructies)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading chest.dat</source>
-        <translation>Fout bij laden chest.dat</translation>
+        <source>Error loading wallet.dat</source>
+        <translation>Fout bij laden wallet.dat</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2401,8 +2401,8 @@ SSL-opties: (zie de Bitcoin wiki voor SSL-instructies)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fout: De transactie was afgewezen. Dit kan gebeuren als u eerder uitgegeven munten opnieuw wilt versturen, zoals wanneer u een kopie van uw chest.dat heeft gebruikt en in de kopie deze munten zijn gemarkeerd als uitgegeven, maar in de huidige nog niet.</translation>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Fout: De transactie was afgewezen. Dit kan gebeuren als u eerder uitgegeven munten opnieuw wilt versturen, zoals wanneer u een kopie van uw wallet.dat heeft gebruikt en in de kopie deze munten zijn gemarkeerd als uitgegeven, maar in de huidige nog niet.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="41"/>

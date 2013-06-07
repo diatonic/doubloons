@@ -1350,8 +1350,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fel: Transaktionen avslogs. Detta kan hända om några av mynten i plånboken redan spenderats, t.ex om du använt en kopia av chest.dat och mynt spenderades i kopian men inte markerats som spenderas här.</translation>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Fel: Transaktionen avslogs. Detta kan hända om några av mynten i plånboken redan spenderats, t.ex om du använt en kopia av wallet.dat och mynt spenderades i kopian men inte markerats som spenderas här.</translation>
     </message>
 </context>
 <context>
@@ -2290,13 +2290,13 @@ SSL-inställningar: (se Bitcoin-wikin för instruktioner)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading chest.dat: Chest corrupted</source>
-        <translation>Fel vid inläsningen av chest.dat: Plånboken är skadad</translation>
+        <source>Error loading wallet.dat: Chest corrupted</source>
+        <translation>Fel vid inläsningen av wallet.dat: Plånboken är skadad</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
-        <translation>Fel vid inläsningen av chest.dat: Plånboken kräver en senare version av Bitcoin</translation>
+        <source>Error loading wallet.dat: Chest requires newer version of Bitcoin</source>
+        <translation>Fel vid inläsningen av wallet.dat: Plånboken kräver en senare version av Bitcoin</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
@@ -2305,8 +2305,8 @@ SSL-inställningar: (se Bitcoin-wikin för instruktioner)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading chest.dat</source>
-        <translation>Fel vid inläsning av plånboksfilen chest.dat</translation>
+        <source>Error loading wallet.dat</source>
+        <translation>Fel vid inläsning av plånboksfilen wallet.dat</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2375,8 +2375,8 @@ SSL-inställningar: (se Bitcoin-wikin för instruktioner)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fel: Transaktionen avslogs.  Detta kan hända om några av mynten i plånboken redan spenderats, t.ex om du använt en kopia av chest.dat och mynt spenderades i kopian men inte markerats som spenderas här.</translation>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Fel: Transaktionen avslogs.  Detta kan hända om några av mynten i plånboken redan spenderats, t.ex om du använt en kopia av wallet.dat och mynt spenderades i kopian men inte markerats som spenderas här.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="41"/>

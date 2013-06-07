@@ -1351,7 +1351,7 @@ Adresse: %4
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2291,13 +2291,13 @@ SSL innstillinger: (se Bitcoin Wiki for instruksjoner om SSL oppsett)</translati
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading chest.dat: Chest corrupted</source>
-        <translation>Feil ved lasting av chest.dat: Lommeboken er skadet</translation>
+        <source>Error loading wallet.dat: Chest corrupted</source>
+        <translation>Feil ved lasting av wallet.dat: Lommeboken er skadet</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
-        <translation>Feil ved lasting av chest.dat: Lommeboken krever en nyere versjon av Bitcoin</translation>
+        <source>Error loading wallet.dat: Chest requires newer version of Bitcoin</source>
+        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Bitcoin</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
@@ -2306,8 +2306,8 @@ SSL innstillinger: (se Bitcoin Wiki for instruksjoner om SSL oppsett)</translati
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading chest.dat</source>
-        <translation>Feil ved lasting av chest.dat</translation>
+        <source>Error loading wallet.dat</source>
+        <translation>Feil ved lasting av wallet.dat</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2376,8 +2376,8 @@ SSL innstillinger: (se Bitcoin Wiki for instruksjoner om SSL oppsett)</translati
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Feil: Transaksjonen ble avvist.  Dette kan skje hvis noen av myntene i lommeboken allerede var brukt, f.eks. hvis du kopierte chest.dat og mynter ble brukt i kopien uten å bli markert brukt her.</translation>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Feil: Transaksjonen ble avvist.  Dette kan skje hvis noen av myntene i lommeboken allerede var brukt, f.eks. hvis du kopierte wallet.dat og mynter ble brukt i kopien uten å bli markert brukt her.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="41"/>

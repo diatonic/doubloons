@@ -5,7 +5,7 @@
 #include "transactiontablemodel.h"
 
 #include "ui_interface.h"
-#include "chest.h"
+#include "wallet.h"
 #include "walletdb.h" // for BackupWallet
 #include "base58.h"
 

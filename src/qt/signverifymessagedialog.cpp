@@ -8,7 +8,7 @@
 #include "main.h"
 #include "optionsmodel.h"
 #include "walletmodel.h"
-#include "chest.h"
+#include "wallet.h"
 
 #include <string>
 #include <vector>

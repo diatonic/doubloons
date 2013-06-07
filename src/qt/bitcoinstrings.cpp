@@ -25,7 +25,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Detach block and address databases. Increases shutdown time (default: 0)"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Error: The transaction was rejected.  This might happen if some of the coins "
-"in your chest were already spent, such as if you used a copy of chest.dat "
+"in your chest were already spent, such as if you used a copy of wallet.dat "
 "and coins were spent in the copy but not marked as spent here."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Error: This transaction requires a transaction fee of at least %s because of "
@@ -73,9 +73,9 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Discover own IP address (default: 1 when list
 QT_TRANSLATE_NOOP("bitcoin-core", "Don't generate coins"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Done loading"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error loading blkindex.dat"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Error loading chest.dat"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Error loading chest.dat: Chest corrupted"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Error loading chest.dat: Chest requires newer version of Doubloons"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Error loading wallet.dat"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Error loading wallet.dat: Chest corrupted"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Error loading wallet.dat: Chest requires newer version of Doubloons"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error: Transaction creation failed  "),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error: Chest locked, unable to create transaction  "),

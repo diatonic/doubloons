@@ -1350,8 +1350,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Hata: Muamele reddedildi.  Cüzdanınızdaki madenî paraların bazıları zaten harcanmış olduğunda bu meydana gelebilir. Örneğin chest.dat dosyasının bir kopyasını kullandıysanız ve kopyada para harcandığında ancak burada harcandığı işaretlenmediğinde.</translation>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Hata: Muamele reddedildi.  Cüzdanınızdaki madenî paraların bazıları zaten harcanmış olduğunda bu meydana gelebilir. Örneğin wallet.dat dosyasının bir kopyasını kullandıysanız ve kopyada para harcandığında ancak burada harcandığı işaretlenmediğinde.</translation>
     </message>
 </context>
 <context>
@@ -2290,13 +2290,13 @@ SSL seçenekleri: (SSL kurulum bilgisi için Bitcoin vikisine bakınız)</transl
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading chest.dat: Chest corrupted</source>
-        <translation>chest.dat dosyasının yüklenmesinde hata oluştu: bozuk cüzdan</translation>
+        <source>Error loading wallet.dat: Chest corrupted</source>
+        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: bozuk cüzdan</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
-        <translation>chest.dat dosyasının yüklenmesinde hata oluştu: cüzdanın daha yeni bir Bitcoin sürümüne ihtiyacı var</translation>
+        <source>Error loading wallet.dat: Chest requires newer version of Bitcoin</source>
+        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: cüzdanın daha yeni bir Bitcoin sürümüne ihtiyacı var</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
@@ -2305,8 +2305,8 @@ SSL seçenekleri: (SSL kurulum bilgisi için Bitcoin vikisine bakınız)</transl
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading chest.dat</source>
-        <translation>chest.dat dosyasının yüklenmesinde hata oluştu</translation>
+        <source>Error loading wallet.dat</source>
+        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2375,8 +2375,8 @@ SSL seçenekleri: (SSL kurulum bilgisi için Bitcoin vikisine bakınız)</transl
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Hata: Muamele reddedildi.  Cüzdanınızdaki madenî paraların bazıları zaten harcanmış olduğunda bu meydana gelebilir. Örneğin chest.dat dosyasının bir kopyasını kullandıysanız ve kopyada para harcandığında ancak burada harcandığı işaretlenmediğinde.</translation>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Hata: Muamele reddedildi.  Cüzdanınızdaki madenî paraların bazıları zaten harcanmış olduğunda bu meydana gelebilir. Örneğin wallet.dat dosyasının bir kopyasını kullandıysanız ve kopyada para harcandığında ancak burada harcandığı işaretlenmediğinde.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="41"/>

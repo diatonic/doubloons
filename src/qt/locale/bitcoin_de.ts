@@ -1348,8 +1348,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fehler: Die Transaktion wurde abgelehnt. Dies kann passieren, wenn einige Bitcoins aus Ihrer Brieftasche bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie Ihrer chest.dat genutzt, die Bitcoins dort ausgegeben haben und dies daher in der derzeit aktiven Brieftasche nicht vermerkt ist.</translation>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Fehler: Die Transaktion wurde abgelehnt. Dies kann passieren, wenn einige Bitcoins aus Ihrer Brieftasche bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie Ihrer wallet.dat genutzt, die Bitcoins dort ausgegeben haben und dies daher in der derzeit aktiven Brieftasche nicht vermerkt ist.</translation>
     </message>
 </context>
 <context>
@@ -2288,13 +2288,13 @@ SSL Optionen: (siehe Bitcoin-Wiki für SSL Installationsanweisungen)</translatio
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading chest.dat: Chest corrupted</source>
-        <translation>Fehler beim Laden von chest.dat: Brieftasche beschädigt</translation>
+        <source>Error loading wallet.dat: Chest corrupted</source>
+        <translation>Fehler beim Laden von wallet.dat: Brieftasche beschädigt</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
-        <translation>Fehler beim Laden von chest.dat: Brieftasche benötigt neuere Version von Bitcoin</translation>
+        <source>Error loading wallet.dat: Chest requires newer version of Bitcoin</source>
+        <translation>Fehler beim Laden von wallet.dat: Brieftasche benötigt neuere Version von Bitcoin</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
@@ -2303,8 +2303,8 @@ SSL Optionen: (siehe Bitcoin-Wiki für SSL Installationsanweisungen)</translatio
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading chest.dat</source>
-        <translation>Fehler beim Laden von chest.dat (Brieftasche)</translation>
+        <source>Error loading wallet.dat</source>
+        <translation>Fehler beim Laden von wallet.dat (Brieftasche)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2373,8 +2373,8 @@ SSL Optionen: (siehe Bitcoin-Wiki für SSL Installationsanweisungen)</translatio
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fehler: Die Transaktion wurde abgelehnt. Dies kann passieren, wenn einige Bitcoins aus Ihrer Brieftasche bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie Ihrer chest.dat genutzt, die Bitcoins dort ausgegeben haben und dies daher in der derzeit aktiven Brieftasche nicht vermerkt ist.</translation>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Fehler: Die Transaktion wurde abgelehnt. Dies kann passieren, wenn einige Bitcoins aus Ihrer Brieftasche bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie Ihrer wallet.dat genutzt, die Bitcoins dort ausgegeben haben und dies daher in der derzeit aktiven Brieftasche nicht vermerkt ist.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="41"/>

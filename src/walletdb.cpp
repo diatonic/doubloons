@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "walletdb.h"
-#include "chest.h"
+#include "wallet.h"
 #include <boost/filesystem.hpp>
 
 using namespace std;
@@ -163,7 +163,7 @@ int CWalletDB::LoadWallet(CWallet* pwallet)
                 wtx.BindWallet(pwallet);
 
                 if (wtx.GetHash() != hash)
-                    printf("Error in chest.dat, hash mismatch\n");
+                    printf("Error in wallet.dat, hash mismatch\n");
 
                 // Undo serialize changes in 31600
                 if (31404 <= wtx.fTimeReceivedIsTxTime && wtx.fTimeReceivedIsTxTime <= 31703)
@@ -367,16 +367,16 @@ void ThreadFlushWalletDB(void* parg)
                     map<string, int>::iterator mi = bitdb.mapFileUseCount.find(strFile);
                     if (mi != bitdb.mapFileUseCount.end())
                     {
-                        printf("Flushing chest.dat\n");
+                        printf("Flushing wallet.dat\n");
                         nLastFlushed = nWalletDBUpdated;
                         int64 nStart = GetTimeMillis();
 
-                        // Flush chest.dat so it's self contained
+                        // Flush wallet.dat so it's self contained
                         bitdb.CloseDb(strFile);
                         bitdb.CheckpointLSN(strFile);
 
                         bitdb.mapFileUseCount.erase(mi++);
-                        printf("Flushed chest.dat %"PRI64d"ms\n", GetTimeMillis() - nStart);
+                        printf("Flushed wallet.dat %"PRI64d"ms\n", GetTimeMillis() - nStart);
                     }
                 }
             }
@@ -399,7 +399,7 @@ bool BackupWallet(const CWallet& chest, const string& strDest)
                 bitdb.CheckpointLSN(chest.strWalletFile);
                 bitdb.mapFileUseCount.erase(chest.strWalletFile);
 
-                // Copy chest.dat
+                // Copy wallet.dat
                 filesystem::path pathSrc = GetDataDir() / chest.strWalletFile;
                 filesystem::path pathDest(strDest);
                 if (filesystem::is_directory(pathDest))
@@ -411,10 +411,10 @@ bool BackupWallet(const CWallet& chest, const string& strDest)
 #else
                     filesystem::copy_file(pathSrc, pathDest);
 #endif
-                    printf("copied chest.dat to %s\n", pathDest.string().c_str());
+                    printf("copied wallet.dat to %s\n", pathDest.string().c_str());
                     return true;
                 } catch(const filesystem::filesystem_error &e) {
-                    printf("error copying chest.dat to %s - %s\n", pathDest.string().c_str(), e.what());
+                    printf("error copying wallet.dat to %s - %s\n", pathDest.string().c_str(), e.what());
                     return false;
                 }
             }

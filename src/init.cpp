@@ -660,14 +660,14 @@ bool AppInit2()
     printf("Loading chest...\n");
     nStart = GetTimeMillis();
     bool fFirstRun;
-    pwalletMain = new CWallet("chest.dat");
+    pwalletMain = new CWallet("wallet.dat");
     int nLoadWalletRet = pwalletMain->LoadWallet(fFirstRun);
     if (nLoadWalletRet != DB_LOAD_OK)
     {
         if (nLoadWalletRet == DB_CORRUPT)
-            strErrors << _("Error loading chest.dat: Chest corrupted") << "\n";
+            strErrors << _("Error loading wallet.dat: Chest corrupted") << "\n";
         else if (nLoadWalletRet == DB_TOO_NEW)
-            strErrors << _("Error loading chest.dat: Chest requires newer version of Doubloons") << "\n";
+            strErrors << _("Error loading wallet.dat: Chest requires newer version of Doubloons") << "\n";
         else if (nLoadWalletRet == DB_NEED_REWRITE)
         {
             strErrors << _("Chest needed to be rewritten: restart Doubloons to complete") << "\n";
@@ -675,7 +675,7 @@ bool AppInit2()
             return InitError(strErrors.str());
         }
         else
-            strErrors << _("Error loading chest.dat") << "\n";
+            strErrors << _("Error loading wallet.dat") << "\n";
     }
 
     if (GetBoolArg("-upgradewallet", fFirstRun))
@@ -717,7 +717,7 @@ bool AppInit2()
         pindexRescan = pindexGenesisBlock;
     else
     {
-        CWalletDB walletdb("chest.dat");
+        CWalletDB walletdb("wallet.dat");
         CBlockLocator locator;
         if (walletdb.ReadBestBlock(locator))
             pindexRescan = locator.GetBlockIndex();

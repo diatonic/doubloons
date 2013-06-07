@@ -4,7 +4,7 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "chest.h"
+#include "wallet.h"
 #include "walletdb.h"
 #include "crypter.h"
 #include "ui_interface.h"
@@ -295,8 +295,8 @@ bool CWallet::EncryptWallet(const SecureString& strWalletPassphrase)
 void CWallet::WalletUpdateSpent(const CTransaction &tx)
 {
     // Anytime a signature is successfully verified, it's proof the outpoint is spent.
-    // Update the chest spent flag if it doesn't know due to chest.dat being
-    // restored from backup or the user making copies of chest.dat.
+    // Update the chest spent flag if it doesn't know due to wallet.dat being
+    // restored from backup or the user making copies of wallet.dat.
     {
         LOCK(cs_wallet);
         BOOST_FOREACH(const CTxIn& txin, tx.vin)
@@ -733,7 +733,7 @@ void CWallet::ReacceptWalletTransactions()
             bool fUpdated = false;
             if (txdb.ReadTxIndex(wtx.GetHash(), txindex))
             {
-                // Update fSpent if a tx got spent somewhere else by a copy of chest.dat
+                // Update fSpent if a tx got spent somewhere else by a copy of wallet.dat
                 if (txindex.vSpent.size() != wtx.vout.size())
                 {
                     printf("ERROR: ReacceptWalletTransactions() : txindex.vSpent.size() %d != wtx.vout.size() %d\n", txindex.vSpent.size(), wtx.vout.size());
@@ -1280,7 +1280,7 @@ string CWallet::SendMoney(CScript scriptPubKey, int64 nValue, CWalletTx& wtxNew,
         return "ABORTED";
 
     if (!CommitTransaction(wtxNew, reservekey))
-        return _("Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.");
+        return _("Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.");
 
     return "";
 }

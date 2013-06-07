@@ -6,7 +6,7 @@
 #ifndef BITCOIN_INIT_H
 #define BITCOIN_INIT_H
 
-#include "chest.h"
+#include "wallet.h"
 
 extern CWallet* pwalletMain;
 

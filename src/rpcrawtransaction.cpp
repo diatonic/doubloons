@@ -11,7 +11,7 @@
 #include "init.h"
 #include "main.h"
 #include "net.h"
-#include "chest.h"
+#include "wallet.h"
 
 using namespace std;
 using namespace boost;

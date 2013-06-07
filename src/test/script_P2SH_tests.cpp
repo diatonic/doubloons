@@ -7,7 +7,7 @@
 
 #include "../main.h"
 #include "../script.h"
-#include "../chest.h"
+#include "../wallet.h"
 
 using namespace std;
 

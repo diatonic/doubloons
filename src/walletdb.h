@@ -23,7 +23,7 @@ enum DBErrors
     DB_NEED_REWRITE
 };
 
-/** Access to the chest database (chest.dat) */
+/** Access to the chest database (wallet.dat) */
 class CWalletDB : public CDB
 {
 public:
@@ -145,7 +145,7 @@ public:
         return Erase(std::make_pair(std::string("pool"), nPool));
     }
 
-    // Settings are no longer stored in chest.dat; these are
+    // Settings are no longer stored in wallet.dat; these are
     // used only for backwards compatibility:
     template<typename T>
     bool ReadSetting(const std::string& strKey, T& value)

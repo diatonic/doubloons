@@ -1,6 +1,6 @@
 #include "transactionrecord.h"
 
-#include "chest.h"
+#include "wallet.h"
 #include "base58.h"
 
 /* Return positive answer if transaction should be shown in list.

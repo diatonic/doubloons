@@ -1,7 +1,7 @@
 #include <boost/test/unit_test.hpp>
 
 #include "main.h"
-#include "chest.h"
+#include "wallet.h"
 
 using namespace std;
 

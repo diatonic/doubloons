@@ -1350,7 +1350,7 @@ Adresas: %4</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2289,13 +2289,13 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading chest.dat: Chest corrupted</source>
-        <translation> chest.dat pakrovimo klaida,  chest.dat sugadintas</translation>
+        <source>Error loading wallet.dat: Chest corrupted</source>
+        <translation> wallet.dat pakrovimo klaida,  wallet.dat sugadintas</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
-        <translation> chest.dat pakrovimo klaida,  chest.dat reikalauja naujasnės Bitcoin versijos</translation>
+        <source>Error loading wallet.dat: Chest requires newer version of Bitcoin</source>
+        <translation> wallet.dat pakrovimo klaida,  wallet.dat reikalauja naujasnės Bitcoin versijos</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
@@ -2304,8 +2304,8 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading chest.dat</source>
-        <translation> chest.dat pakrovimo klaida</translation>
+        <source>Error loading wallet.dat</source>
+        <translation> wallet.dat pakrovimo klaida</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2374,8 +2374,8 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Klaida: sandoris buvo atmestas.Tai gali įvykti, jei kai kurios monetos iš jūsų piniginėje jau buvo panaudotos, pvz. jei naudojote chest.dat kopiją ir monetos buvo išleistos kopijoje, bet nepažymėtos kaip skirtos išleisti čia.</translation>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Klaida: sandoris buvo atmestas.Tai gali įvykti, jei kai kurios monetos iš jūsų piniginėje jau buvo panaudotos, pvz. jei naudojote wallet.dat kopiją ir monetos buvo išleistos kopijoje, bet nepažymėtos kaip skirtos išleisti čia.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="41"/>

@@ -1351,7 +1351,7 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>错误: 交易被拒绝. 如果您使用的是备份钱包，可能存在两个钱包不同步的情况，另一个钱包中的比特币已经被使用，但本地的这个钱包尚没有记录。</translation>
     </message>
 </context>
@@ -2318,13 +2318,13 @@ SSL 选项: (SSL 安装教程具体见比特币维基百科)
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="134"/>
-        <source>Error loading chest.dat: Chest corrupted</source>
-        <translation>chest.dat钱包文件加载错误：钱包损坏</translation>
+        <source>Error loading wallet.dat: Chest corrupted</source>
+        <translation>wallet.dat钱包文件加载错误：钱包损坏</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading chest.dat: Chest requires newer version of Bitcoin</source>
-        <translation>chest.dat钱包文件加载错误：请升级到最新Bitcoin客户端</translation>
+        <source>Error loading wallet.dat: Chest requires newer version of Bitcoin</source>
+        <translation>wallet.dat钱包文件加载错误：请升级到最新Bitcoin客户端</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
@@ -2333,8 +2333,8 @@ SSL 选项: (SSL 安装教程具体见比特币维基百科)
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
-        <source>Error loading chest.dat</source>
-        <translation>chest.dat钱包文件加载错误</translation>
+        <source>Error loading wallet.dat</source>
+        <translation>wallet.dat钱包文件加载错误</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="124"/>
@@ -2403,7 +2403,7 @@ SSL 选项: (SSL 安装教程具体见比特币维基百科)
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="37"/>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of chest.dat and coins were spent in the copy but not marked as spent here.</source>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>错误：交易被拒绝。这种情况通常发生在您钱包中的一些货币已经被消费之后，比如您使用了一个wallet.dat的副本，而货币在那个副本中已经被消费，但在当前钱包中未被标记为已消费。</translation>
     </message>
     <message>

@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "main.h"
-#include "chest.h"
+#include "wallet.h"
 #include "db.h"
 #include "walletdb.h"
 #include "net.h"
@@ -1586,7 +1586,7 @@ Value backupwallet(const Array& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
             "backupwallet <destination>\n"
-            "Safely copies chest.dat to destination, which can be a directory or a path with filename.");
+            "Safely copies wallet.dat to destination, which can be a directory or a path with filename.");
 
     string strDest = params[0].get_str();
     BackupWallet(*pwalletMain, strDest);

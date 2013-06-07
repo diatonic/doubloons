@@ -13,7 +13,7 @@
 #include "json/json_spirit_utils.h"
 
 #include "main.h"
-#include "chest.h"
+#include "wallet.h"
 
 using namespace std;
 using namespace json_spirit;
