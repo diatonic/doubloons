@@ -63,7 +63,7 @@ OBJS= \
     obj/scrypt.o \
     obj/sync.o \
     obj/util.o \
-    obj/chest.o \
+    obj/wallet.o \
     obj/walletdb.o \
     obj/noui.o
 
