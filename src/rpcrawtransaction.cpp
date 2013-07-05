@@ -194,7 +194,7 @@ Value createrawtransaction(const Array& params, bool fHelp)
             "sending to given address(es).\n"
             "Returns hex-encoded raw transaction.\n"
             "Note that the transaction's inputs are not signed, and\n"
-            "it is not stored in the wallet or transmitted to the network.");
+            "it is not stored in the chest or transmitted to the network.");
 
     RPCTypeCheck(params, list_of(array_type)(obj_type));
 

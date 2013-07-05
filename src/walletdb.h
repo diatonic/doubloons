@@ -13,7 +13,7 @@ class CKeyPool;
 class CAccount;
 class CAccountingEntry;
 
-/** Error statuses for the wallet database */
+/** Error statuses for the chest database */
 enum DBErrors
 {
     DB_LOAD_OK,
@@ -23,7 +23,7 @@ enum DBErrors
     DB_NEED_REWRITE
 };
 
-/** Access to the wallet database (wallet.dat) */
+/** Access to the chest database (wallet.dat) */
 class CWalletDB : public CDB
 {
 public:

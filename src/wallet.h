@@ -17,12 +17,12 @@ class CReserveKey;
 class CWalletDB;
 class COutput;
 
-/** (client) version numbers for particular wallet features */
+/** (client) version numbers for particular chest features */
 enum WalletFeature
 {
     FEATURE_BASE = 10500, // the earliest version new wallets supports (only useful for getinfo's clientversion output)
 
-    FEATURE_WALLETCRYPT = 40000, // wallet encryption
+    FEATURE_WALLETCRYPT = 40000, // chest encryption
     FEATURE_COMPRPUBKEY = 60000, // compressed public keys
 
     FEATURE_LATEST = 60000
@@ -66,10 +66,10 @@ private:
 
     CWalletDB *pwalletdbEncryption;
 
-    // the current wallet version: clients below this version are not able to load the wallet
+    // the current chest version: clients below this version are not able to load the chest
     int nWalletVersion;
 
-    // the maximum wallet format version: memory-only variable that specifies to what version this wallet may be upgraded
+    // the maximum chest format version: memory-only variable that specifies to what version this chest may be upgraded
     int nWalletMaxVersion;
 
 public:
@@ -188,7 +188,7 @@ public:
     {
         BOOST_FOREACH(const CTxOut& txout, tx.vout)
             // If output is less than minimum value, then don't include transaction.
-            // This is to help deal with dust spam bloating the wallet.
+            // This is to help deal with dust spam bloating the chest.
             if (IsMine(txout) && txout.nValue >= nMinimumInputValue)
                 return true;
         return false;
@@ -261,24 +261,24 @@ public:
 
     bool SetDefaultKey(const CPubKey &vchPubKey);
 
-    // signify that a particular wallet feature is now used. this may change nWalletVersion and nWalletMaxVersion if those are lower
+    // signify that a particular chest feature is now used. this may change nWalletVersion and nWalletMaxVersion if those are lower
     bool SetMinVersion(enum WalletFeature, CWalletDB* pwalletdbIn = NULL, bool fExplicit = false);
 
     // change which version we're allowed to upgrade to (note that this does not immediately imply upgrading to that format)
     bool SetMaxVersion(int nVersion);
 
-    // get the current wallet format (the oldest client version guaranteed to understand this wallet)
+    // get the current chest format (the oldest client version guaranteed to understand this chest)
     int GetVersion() { return nWalletVersion; }
 
     /** Address book entry changed.
      * @note called with lock cs_wallet held.
      */
-    boost::signals2::signal<void (CWallet *wallet, const CTxDestination &address, const std::string &label, bool isMine, ChangeType status)> NotifyAddressBookChanged;
+    boost::signals2::signal<void (CWallet *chest, const CTxDestination &address, const std::string &label, bool isMine, ChangeType status)> NotifyAddressBookChanged;
 
-    /** Wallet transaction added, removed or updated.
+    /** Chest transaction added, removed or updated.
      * @note called with lock cs_wallet held.
      */
-    boost::signals2::signal<void (CWallet *wallet, const uint256 &hashTx, ChangeType status)> NotifyTransactionChanged;
+    boost::signals2::signal<void (CWallet *chest, const uint256 &hashTx, ChangeType status)> NotifyTransactionChanged;
 };
 
 /** A key allocated from the key pool. */
@@ -670,7 +670,7 @@ public:
 
 
 /** Account information.
- * Stored in wallet with key "acc"+string account name.
+ * Stored in chest with key "acc"+string account name.
  */
 class CAccount
 {

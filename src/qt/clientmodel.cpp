@@ -20,7 +20,7 @@ ClientModel::ClientModel(OptionsModel *optionsModel, QObject *parent) :
     numBlocksAtStartup = -1;
 
     pollTimer = new QTimer(this);
-    // Read our specific settings from the wallet db
+    // Read our specific settings from the chest db
     /*
     CWalletDB walletdb(optionsModel->getWallet()->strWalletFile);
     walletdb.ReadSetting("miningDebug", miningDebug);

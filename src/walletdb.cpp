@@ -125,7 +125,7 @@ int CWalletDB::LoadWallet(CWallet* pwallet)
         Dbc* pcursor = GetCursor();
         if (!pcursor)
         {
-            printf("Error getting wallet database cursor\n");
+            printf("Error getting chest database cursor\n");
             return DB_CORRUPT;
         }
 
@@ -139,7 +139,7 @@ int CWalletDB::LoadWallet(CWallet* pwallet)
                 break;
             else if (ret != 0)
             {
-                printf("Error reading next record from wallet database\n");
+                printf("Error reading next record from chest database\n");
                 return DB_CORRUPT;
             }
 
@@ -214,12 +214,12 @@ int CWalletDB::LoadWallet(CWallet* pwallet)
                     key.SetPrivKey(pkey);
                     if (key.GetPubKey() != vchPubKey)
                     {
-                        printf("Error reading wallet database: CPrivKey pubkey inconsistency\n");
+                        printf("Error reading chest database: CPrivKey pubkey inconsistency\n");
                         return DB_CORRUPT;
                     }
                     if (!key.IsValid())
                     {
-                        printf("Error reading wallet database: invalid CPrivKey\n");
+                        printf("Error reading chest database: invalid CPrivKey\n");
                         return DB_CORRUPT;
                     }
                 }
@@ -231,18 +231,18 @@ int CWalletDB::LoadWallet(CWallet* pwallet)
                     key.SetPrivKey(wkey.vchPrivKey);
                     if (key.GetPubKey() != vchPubKey)
                     {
-                        printf("Error reading wallet database: CWalletKey pubkey inconsistency\n");
+                        printf("Error reading chest database: CWalletKey pubkey inconsistency\n");
                         return DB_CORRUPT;
                     }
                     if (!key.IsValid())
                     {
-                        printf("Error reading wallet database: invalid CWalletKey\n");
+                        printf("Error reading chest database: invalid CWalletKey\n");
                         return DB_CORRUPT;
                     }
                 }
                 if (!pwallet->LoadKey(key))
                 {
-                    printf("Error reading wallet database: LoadKey failed\n");
+                    printf("Error reading chest database: LoadKey failed\n");
                     return DB_CORRUPT;
                 }
             }
@@ -254,7 +254,7 @@ int CWalletDB::LoadWallet(CWallet* pwallet)
                 ssValue >> kMasterKey;
                 if(pwallet->mapMasterKeys.count(nID) != 0)
                 {
-                    printf("Error reading wallet database: duplicate CMasterKey id %u\n", nID);
+                    printf("Error reading chest database: duplicate CMasterKey id %u\n", nID);
                     return DB_CORRUPT;
                 }
                 pwallet->mapMasterKeys[nID] = kMasterKey;
@@ -269,7 +269,7 @@ int CWalletDB::LoadWallet(CWallet* pwallet)
                 ssValue >> vchPrivKey;
                 if (!pwallet->LoadCryptedKey(vchPubKey, vchPrivKey))
                 {
-                    printf("Error reading wallet database: LoadCryptedKey failed\n");
+                    printf("Error reading chest database: LoadCryptedKey failed\n");
                     return DB_CORRUPT;
                 }
                 fIsEncrypted = true;
@@ -298,7 +298,7 @@ int CWalletDB::LoadWallet(CWallet* pwallet)
                 ssValue >> script;
                 if (!pwallet->LoadCScript(script))
                 {
-                    printf("Error reading wallet database: LoadCScript failed\n");
+                    printf("Error reading chest database: LoadCScript failed\n");
                     return DB_CORRUPT;
                 }
             }
@@ -324,8 +324,8 @@ int CWalletDB::LoadWallet(CWallet* pwallet)
 
 void ThreadFlushWalletDB(void* parg)
 {
-    // Make this thread recognisable as the wallet flushing thread
-    RenameThread("bitcoin-wallet");
+    // Make this thread recognisable as the chest flushing thread
+    RenameThread("bitcoin-chest");
 
     const string& strFile = ((const string*)parg)[0];
     static bool fOneThread;
@@ -384,26 +384,26 @@ void ThreadFlushWalletDB(void* parg)
     }
 }
 
-bool BackupWallet(const CWallet& wallet, const string& strDest)
+bool BackupWallet(const CWallet& chest, const string& strDest)
 {
-    if (!wallet.fFileBacked)
+    if (!chest.fFileBacked)
         return false;
     while (!fShutdown)
     {
         {
             LOCK(bitdb.cs_db);
-            if (!bitdb.mapFileUseCount.count(wallet.strWalletFile) || bitdb.mapFileUseCount[wallet.strWalletFile] == 0)
+            if (!bitdb.mapFileUseCount.count(chest.strWalletFile) || bitdb.mapFileUseCount[chest.strWalletFile] == 0)
             {
                 // Flush log data to the dat file
-                bitdb.CloseDb(wallet.strWalletFile);
-                bitdb.CheckpointLSN(wallet.strWalletFile);
-                bitdb.mapFileUseCount.erase(wallet.strWalletFile);
+                bitdb.CloseDb(chest.strWalletFile);
+                bitdb.CheckpointLSN(chest.strWalletFile);
+                bitdb.mapFileUseCount.erase(chest.strWalletFile);
 
                 // Copy wallet.dat
-                filesystem::path pathSrc = GetDataDir() / wallet.strWalletFile;
+                filesystem::path pathSrc = GetDataDir() / chest.strWalletFile;
                 filesystem::path pathDest(strDest);
                 if (filesystem::is_directory(pathDest))
-                    pathDest /= wallet.strWalletFile;
+                    pathDest /= chest.strWalletFile;
 
                 try {
 #if BOOST_VERSION >= 104000

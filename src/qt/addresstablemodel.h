@@ -15,7 +15,7 @@ class AddressTableModel : public QAbstractTableModel
 {
     Q_OBJECT
 public:
-    explicit AddressTableModel(CWallet *wallet, WalletModel *parent = 0);
+    explicit AddressTableModel(CWallet *chest, WalletModel *parent = 0);
     ~AddressTableModel();
 
     enum ColumnIndex {
@@ -32,7 +32,7 @@ public:
         OK,
         INVALID_ADDRESS,   /**< Unparseable address */
         DUPLICATE_ADDRESS,  /**< Address already in address book */
-        WALLET_UNLOCK_FAILURE, /**< Wallet could not be unlocked to create new receiving address */
+        WALLET_UNLOCK_FAILURE, /**< Chest could not be unlocked to create new receiving address */
         KEY_GENERATION_FAILURE /**< Generating a new public key for a receiving address failed */
     };
 
@@ -69,7 +69,7 @@ public:
 
 private:
     WalletModel *walletModel;
-    CWallet *wallet;
+    CWallet *chest;
     AddressTablePriv *priv;
     QStringList columns;
     EditStatus editStatus;

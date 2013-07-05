@@ -140,27 +140,27 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <source>Enter the new passphrase to the chest.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Encrypt wallet</source>
+        <source>Encrypt chest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <source>This operation needs your chest passphrase to unlock the chest.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Unlock wallet</source>
+        <source>Unlock chest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <source>This operation needs your chest passphrase to decrypt the chest.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Decrypt wallet</source>
+        <source>Decrypt chest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -168,24 +168,24 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
+        <source>Enter the old and new passphrase to the chest.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Confirm wallet encryption</source>
+        <source>Confirm chest encryption</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
-Are you sure you wish to encrypt your wallet?</source>
+        <source>WARNING: If you encrypt your chest and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!
+Are you sure you wish to encrypt your chest?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet encrypted</source>
+        <source>Chest encrypted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your chest cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -193,11 +193,11 @@ Are you sure you wish to encrypt your wallet?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet encryption failed</source>
+        <source>Chest encryption failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <source>Chest encryption failed due to an internal error. Your chest was not encrypted.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -205,26 +205,26 @@ Are you sure you wish to encrypt your wallet?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet unlock failed</source>
+        <source>Chest unlock failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <source>The passphrase entered for the chest decryption was incorrect.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet decryption failed</source>
+        <source>Chest decryption failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet passphrase was successfully changed.</source>
+        <source>Chest passphrase was successfully changed.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Bitcoin Wallet</source>
+        <source>Bitcoin Chest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -244,7 +244,7 @@ Are you sure you wish to encrypt your wallet?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show general overview of wallet</source>
+        <source>Show general overview of chest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -304,11 +304,11 @@ Are you sure you wish to encrypt your wallet?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Encrypt Wallet...</source>
+        <source>&amp;Encrypt Chest...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
+        <source>&amp;Backup Chest...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -359,15 +359,15 @@ Are you sure you wish to encrypt your wallet?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Encrypt or decrypt wallet</source>
+        <source>Encrypt or decrypt chest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Backup wallet to another location</source>
+        <source>Backup chest to another location</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Change the passphrase used for wallet encryption</source>
+        <source>Change the passphrase used for chest encryption</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -494,19 +494,19 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <source>Chest is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Backup Wallet</source>
+        <source>Backup Chest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet Data (*.dat)</source>
+        <source>Chest Data (*.dat)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -514,7 +514,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>There was an error trying to save the wallet data to the new location.</source>
+        <source>There was an error trying to save the chest data to the new location.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -576,7 +576,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Could not unlock wallet.</source>
+        <source>Could not unlock chest.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -646,7 +646,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
+        <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The chest is always detached.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -781,7 +781,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your chest automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -797,7 +797,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet</source>
+        <source>Chest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -821,7 +821,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Total number of transactions in wallet</source>
+        <source>Total number of transactions in chest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1066,7 +1066,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1220,7 +1220,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet unlock was canceled.</source>
+        <source>Chest unlock was canceled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1849,7 +1849,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Upgrade wallet to latest format</source>
+        <source>Upgrade chest to latest format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1857,7 +1857,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
+        <source>Rescan the block chain for missing chest transactions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1930,15 +1930,15 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <source>Error loading wallet.dat: Chest corrupted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
+        <source>Error loading wallet.dat: Chest requires newer version of Bitcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
+        <source>Chest needed to be rewritten: restart Bitcoin to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1974,7 +1974,7 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Error: Wallet locked, unable to create transaction  </source>
+        <source>Error: Chest locked, unable to create transaction  </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1990,7 +1990,7 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your chest were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2026,11 +2026,11 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Loading wallet...</source>
+        <source>Loading chest...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Cannot downgrade wallet</source>
+        <source>Cannot downgrade chest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

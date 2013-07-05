@@ -49,37 +49,37 @@ struct TxLessThan
 class TransactionTablePriv
 {
 public:
-    TransactionTablePriv(CWallet *wallet, TransactionTableModel *parent):
-            wallet(wallet),
+    TransactionTablePriv(CWallet *chest, TransactionTableModel *parent):
+            chest(chest),
             parent(parent)
     {
     }
-    CWallet *wallet;
+    CWallet *chest;
     TransactionTableModel *parent;
 
-    /* Local cache of wallet.
+    /* Local cache of chest.
      * As it is in the same order as the CWallet, by definition
      * this is sorted by sha256.
      */
     QList<TransactionRecord> cachedWallet;
 
-    /* Query entire wallet anew from core.
+    /* Query entire chest anew from core.
      */
     void refreshWallet()
     {
         OutputDebugStringF("refreshWallet\n");
         cachedWallet.clear();
         {
-            LOCK(wallet->cs_wallet);
-            for(std::map<uint256, CWalletTx>::iterator it = wallet->mapWallet.begin(); it != wallet->mapWallet.end(); ++it)
+            LOCK(chest->cs_wallet);
+            for(std::map<uint256, CWalletTx>::iterator it = chest->mapWallet.begin(); it != chest->mapWallet.end(); ++it)
             {
                 if(TransactionRecord::showTransaction(it->second))
-                    cachedWallet.append(TransactionRecord::decomposeTransaction(wallet, it->second));
+                    cachedWallet.append(TransactionRecord::decomposeTransaction(chest, it->second));
             }
         }
     }
 
-    /* Update our model of the wallet incrementally, to synchronize our model of the wallet
+    /* Update our model of the chest incrementally, to synchronize our model of the chest
        with that of the core.
 
        Call with transaction that was added, removed or changed.
@@ -88,11 +88,11 @@ public:
     {
         OutputDebugStringF("updateWallet %s %i\n", hash.ToString().c_str(), status);
         {
-            LOCK(wallet->cs_wallet);
+            LOCK(chest->cs_wallet);
 
-            // Find transaction in wallet
-            std::map<uint256, CWalletTx>::iterator mi = wallet->mapWallet.find(hash);
-            bool inWallet = mi != wallet->mapWallet.end();
+            // Find transaction in chest
+            std::map<uint256, CWalletTx>::iterator mi = chest->mapWallet.find(hash);
+            bool inWallet = mi != chest->mapWallet.end();
 
             // Find bounds of this transaction in model
             QList<TransactionRecord>::iterator lower = qLowerBound(
@@ -127,14 +127,14 @@ public:
                 }
                 if(!inWallet)
                 {
-                    OutputDebugStringF("Warning: updateWallet: Got CT_NEW, but transaction is not in wallet\n");
+                    OutputDebugStringF("Warning: updateWallet: Got CT_NEW, but transaction is not in chest\n");
                     break;
                 }
                 if(showTransaction)
                 {
                     // Added -- insert at the right position
                     QList<TransactionRecord> toInsert =
-                            TransactionRecord::decomposeTransaction(wallet, mi->second);
+                            TransactionRecord::decomposeTransaction(chest, mi->second);
                     if(!toInsert.isEmpty()) /* only if something to insert */
                     {
                         parent->beginInsertRows(QModelIndex(), lowerIndex, lowerIndex+toInsert.size()-1);
@@ -179,15 +179,15 @@ public:
             TransactionRecord *rec = &cachedWallet[idx];
 
             // If a status update is needed (blocks came in since last check),
-            //  update the status of this transaction from the wallet. Otherwise,
+            //  update the status of this transaction from the chest. Otherwise,
             // simply re-use the cached status.
             if(rec->statusUpdateNeeded())
             {
                 {
-                    LOCK(wallet->cs_wallet);
-                    std::map<uint256, CWalletTx>::iterator mi = wallet->mapWallet.find(rec->hash);
+                    LOCK(chest->cs_wallet);
+                    std::map<uint256, CWalletTx>::iterator mi = chest->mapWallet.find(rec->hash);
 
-                    if(mi != wallet->mapWallet.end())
+                    if(mi != chest->mapWallet.end())
                     {
                         rec->updateStatus(mi->second);
                     }
@@ -204,11 +204,11 @@ public:
     QString describe(TransactionRecord *rec)
     {
         {
-            LOCK(wallet->cs_wallet);
-            std::map<uint256, CWalletTx>::iterator mi = wallet->mapWallet.find(rec->hash);
-            if(mi != wallet->mapWallet.end())
+            LOCK(chest->cs_wallet);
+            std::map<uint256, CWalletTx>::iterator mi = chest->mapWallet.find(rec->hash);
+            if(mi != chest->mapWallet.end())
             {
-                return TransactionDesc::toHTML(wallet, mi->second);
+                return TransactionDesc::toHTML(chest, mi->second);
             }
         }
         return QString("");
@@ -216,11 +216,11 @@ public:
 
 };
 
-TransactionTableModel::TransactionTableModel(CWallet* wallet, WalletModel *parent):
+TransactionTableModel::TransactionTableModel(CWallet* chest, WalletModel *parent):
         QAbstractTableModel(parent),
-        wallet(wallet),
+        chest(chest),
         walletModel(parent),
-        priv(new TransactionTablePriv(wallet, this)),
+        priv(new TransactionTablePriv(chest, this)),
         cachedNumBlocks(0)
 {
     columns << QString() << tr("Date") << tr("Type") << tr("Address") << tr("Amount");

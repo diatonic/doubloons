@@ -94,7 +94,7 @@ bool static IsFromMe(CTransaction& tx)
     return false;
 }
 
-// get the wallet transaction with the given hash (if it exists)
+// get the chest transaction with the given hash (if it exists)
 bool static GetTransaction(const uint256& hashTx, CWalletTx& wtx)
 {
     BOOST_FOREACH(CWallet* pwallet, setpwalletRegistered)
@@ -609,7 +609,7 @@ bool CTxMemPool::accept(CTxDB& txdb, CTransaction &tx, bool fCheckInputs,
     }
 
     ///// are we sure this is ok when loading transactions or restoring block txes
-    // If updated, erase old tx from wallet
+    // If updated, erase old tx from chest
     if (ptxOld)
         EraseFromWallets(ptxOld->GetHash());
 
@@ -1626,7 +1626,7 @@ bool CBlock::SetBestChain(CTxDB& txdb, CBlockIndex* pindexNew)
         }
     }
 
-    // Update best block in wallet (so we can detect restored wallets)
+    // Update best block in chest (so we can detect restored wallets)
     bool fIsInitialDownload = IsInitialBlockDownload();
     if (!fIsInitialDownload)
     {
@@ -3116,7 +3116,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
                 pto->PushMessage("ping");
         }
 
-        // Resend wallet transactions that haven't gotten in a block yet
+        // Resend chest transactions that haven't gotten in a block yet
         ResendWalletTransactions();
 
         // Address refresh broadcast
@@ -3606,7 +3606,7 @@ void FormatHashBuffers(CBlock* pblock, char* pmidstate, char* pdata, char* phash
 }
 
 
-bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
+bool CheckWork(CBlock* pblock, CWallet& chest, CReserveKey& reservekey)
 {
     uint256 hash = pblock->GetPoWHash();
     uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
@@ -3631,8 +3631,8 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
         // Track how many getdata requests this block gets
         {
-            LOCK(wallet.cs_wallet);
-            wallet.mapRequestCount[pblock->GetHash()] = 0;
+            LOCK(chest.cs_wallet);
+            chest.mapRequestCount[pblock->GetHash()] = 0;
         }
 
         // Process this block the same as if we had received it from another node

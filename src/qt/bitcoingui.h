@@ -29,7 +29,7 @@ QT_END_NAMESPACE
 
 /**
   Bitcoin GUI main class. This class represents the main window of the Bitcoin UI. It communicates with both the client and
-  wallet models to give the user an up-to-date view of the current core state.
+  chest models to give the user an up-to-date view of the current core state.
 */
 class BitcoinGUI : public QMainWindow
 {
@@ -39,11 +39,11 @@ public:
     ~BitcoinGUI();
 
     /** Set the client model.
-        The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic.
+        The client model represents the part of the core that communicates with the P2P network, and is chest-agnostic.
     */
     void setClientModel(ClientModel *clientModel);
-    /** Set the wallet model.
-        The wallet model represents a bitcoin wallet, and offers access to the list of transactions, address book and sending
+    /** Set the chest model.
+        The chest model represents a bitcoin chest, and offers access to the list of transactions, address book and sending
         functionality.
     */
     void setWalletModel(WalletModel *walletModel);
@@ -170,13 +170,13 @@ private slots:
         The new items are those between start and end inclusive, under the given parent item.
     */
     void incomingTransaction(const QModelIndex & parent, int start, int end);
-    /** Encrypt the wallet */
+    /** Encrypt the chest */
     void encryptWallet(bool status);
-    /** Backup the wallet */
+    /** Backup the chest */
     void backupWallet();
-    /** Change encrypted wallet passphrase */
+    /** Change encrypted chest passphrase */
     void changePassphrase();
-    /** Ask for pass phrase to unlock wallet temporarily */
+    /** Ask for pass phrase to unlock chest temporarily */
     void unlockWallet();
 
     /** Show window if hidden, unminimize when minimized, rise when obscured or show if hidden and fToggleHidden is true */

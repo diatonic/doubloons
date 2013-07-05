@@ -22,12 +22,12 @@ derived using derivation method nDerivationMethod
 vchOtherDerivationParameters is provided for alternative algorithms
 which may require more parameters (such as scrypt).
 
-Wallet Private Keys are then encrypted using AES-256-CBC
+Chest Private Keys are then encrypted using AES-256-CBC
 with the double-sha256 of the public key as the IV, and the
 master key's key as the encryption key (see keystore.[ch]).
 */
 
-/** Master key for wallet encryption */
+/** Master key for chest encryption */
 class CMasterKey
 {
 public:
